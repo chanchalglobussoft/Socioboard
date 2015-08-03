@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chanchal Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>SocioBoard | Sample</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Contents/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="Contents/css/plugins/timeline.css" rel="stylesheet">
+        <link href="Contents/css/app.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+
+
+    <!-- Morris Charts CSS -->
+    <link href="Contents/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="Contents/css/plugins/social-buttons.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html"><img class="img-responsive" src="Contents/img/logo.png" alt="Socio Board" style="
+    margin-top: -14px;" /></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="active">
+                        <a href="home.html"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#SearchModal" style="margin-top: 10px;"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#myModal" style="margin-top: 10px;"><i class="fa fa-send-o fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a style="margin-top: 10px;"><i class="fa fa-users fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <!-- <i class="fa fa-user fa-2x fa-fw"></i> -->
+                        <img src="https://pbs.twimg.com/profile_images/507048905217802240/MjAkkHK_.jpeg" class=" headerProfilePic"><strong> Chanchal Santra </strong><i class="fa fa-caret-down fa-2x"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="Contents/img/group.png" style="width: 35px;"> Users &amp; Groups</i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase fa-2x fa-fw"></i> Business Settings</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-2x fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-2x fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+    <!-- Left panel : Navigation area -->
+    <a class="menu-toggler" id="menu-toggler" href="#">
+                <span class="menu-text"></span>
+            </a>
+
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                    <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                        <button class="btn btn-small btn-success">
+                            <i class="icon-signal"></i>
+                        </button>
+
+                        <button class="btn btn-small btn-info">
+                            <i class="icon-pencil"></i>
+                        </button>
+
+                        <button class="btn btn-small btn-warning">
+                            <i class="icon-group"></i>
+                        </button>
+
+                        <button class="btn btn-small btn-danger">
+                            <i class="icon-cogs"></i>
+                        </button>
+                    </div>
+
+                    <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                        <span class="btn btn-success"></span>
+
+                        <span class="btn btn-info"></span>
+
+                        <span class="btn btn-warning"></span>
+
+                        <span class="btn btn-danger"></span>
+                    </div>
+                </div><!--#sidebar-shortcuts-->
+
+                <ul class="nav nav-list">
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="icon-dashboard"></i>
+                            <span class="menu-text"> Dashboard </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="typography.html">
+                            <i class="icon-text-width"></i>
+                            <span class="menu-text"> Typography </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="icon-desktop"></i>
+                            <span class="menu-text"> UI Elements </span>
+
+                            <b class="arrow icon-angle-down"></b>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="elements.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Elements
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="buttons.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Buttons &amp; Icons
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="treeview.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Treeview
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="icon-double-angle-right"></i>
+
+                                    Three Level Menu
+                                    <b class="arrow icon-angle-down"></b>
+                                </a>
+
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-leaf"></i>
+                                            Item #1
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="dropdown-toggle">
+                                            <i class="icon-pencil"></i>
+
+                                            4th level
+                                            <b class="arrow icon-angle-down"></b>
+                                        </a>
+
+                                        <ul class="submenu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icon-plus"></i>
+                                                    Add Product
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icon-eye-open"></i>
+                                                    View Products
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="tables.html">
+                            <i class="icon-list"></i>
+                            <span class="menu-text"> Tables </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="icon-edit"></i>
+                            <span class="menu-text"> Forms </span>
+
+                            <b class="arrow icon-angle-down"></b>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="form-elements.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Form Elements
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="form-wizard.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Wizard &amp; Validation
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="wysiwyg.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Wysiwyg &amp; Markdown
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="widgets.html">
+                            <i class="icon-list-alt"></i>
+                            <span class="menu-text"> Widgets </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="calendar.html">
+                            <i class="icon-calendar"></i>
+
+                            <span class="menu-text">
+                                Calendar
+                                <span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
+                                    <i class="icon-warning-sign red bigger-130"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            <i class="icon-picture"></i>
+                            <span class="menu-text"> Gallery </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="icon-tag"></i>
+                            <span class="menu-text"> More Pages </span>
+
+                            <b class="arrow icon-angle-down"></b>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="profile.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    User Profile
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="pricing.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Pricing Tables
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="invoice.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Invoice
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="login.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Login &amp; Register
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="icon-file-alt"></i>
+
+                            <span class="menu-text">
+                                Other Pages
+                                <span class="badge badge-primary ">4</span>
+                            </span>
+
+                            <b class="arrow icon-angle-down"></b>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="error-404.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Error 404
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="error-500.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Error 500
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="grid.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Grid
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="blank.html">
+                                    <i class="icon-double-angle-right"></i>
+                                    Blank Page
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul><!--/.nav-list-->
+
+                <!-- <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="icon-double-angle-left"></i>
+                </div> -->
+
+                 <span class="minifyme"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+            </div>
+            <!-- /.navbar-static-side -->
+                  </nav>
+
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New Message</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-3">
+                            <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/s960x960/1523017_786750101350785_664146563_o.jpg" alt="" class="img-circle" style="height: 80px; width: 80px;">
+                            <hr class="small">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning">Action</button>
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">fb</a></li>
+                                <li><a href="#">tweeter</a></li>
+                                <li><a href="#">gplus</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="input-group col-md-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Interval Time:</p>
+                                <select class="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+            <!-- Modal SearchModal-->
+        <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                        </div>  
+                          <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-search fa-fw"></i>
+                            Search Result
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-wifi fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-close fa-fw"></i></small>
+                                    </div>
+                                </li>
+                            </ul>
+                            <pre><i class="fa fa-twitter"></i>twitter</pre>
+                             <ul class="chat">
+                                <li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-wifi fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-close fa-fw"></i></small>
+                                    </div>
+                                </li>
+                            </ul>
+                            <pre><i class="fa fa-facebook"></i>facebook</pre>
+                            <a class="btn btn-block btn-social btn-twitter">
+                                <i class="fa fa-twitter"></i> Sign in with Twitter
+                            </a>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <button type="button" class="btn btn-primary btn-md btn-block"><i class="fa fa-facebook-square fa-fw"></i>Chanchal Santra<i class="fa fa-clock-o fa-fw pull-right"></i></button>
+                            <button type="button" class="btn btn-primary btn-md btn-block"><i class="fa fa-linkedin-square fa-fw"></i>Chanchal Santra<i class="fa fa-clock-o fa-fw pull-right"></i></button>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+        <div id="page-wrapper">
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Company Profile</h1>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="container-fluid">
+                <div class="col-md-12">
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Google Analytics Socioboard -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58515856-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- End -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Contents/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="Contents/js/plugins/morris/raphael.min.js"></script>
+    <script src="Contents/js/plugins/morris/morris.min.js"></script>
+    
+
+    <!-- Custom Theme JavaScript -->
+    <script src="Contents/js/sb-admin-2.js"></script>
+
+    <script src="Contents/js/app.js"></script>
+
+</body>
+
+</html>

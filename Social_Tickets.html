@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chanchal Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>SocioBoard | Social Tickets</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Contents/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="Contents/css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="Contents/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html"><img class="img-responsive" src="Contents/img/logo.png" alt="Socio Board" style="
+    margin-top: -14px;" /></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                        <a class="active" href="home.html"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#SearchModal" style="margin-top: 10px;"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#myModal" style="margin-top: 10px;"><i class="fa fa-send-o fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a style="margin-top: 10px;"><i class="fa fa-users fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <!-- <i class="fa fa-user fa-2x fa-fw"></i> -->
+                        <img src="https://pbs.twimg.com/profile_images/507048905217802240/MjAkkHK_.jpeg" class=" headerProfilePic"><strong> Chanchal Santra </strong><i class="fa fa-caret-down fa-2x"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="Contents/img/group.png"> Users &amp; Groups</i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-2x fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-2x fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a class="active" href="home.html"><i class="fa fa-dashboard fa-fw fa-2x"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw fa-2x"></i> Message<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="message.html"> Smart Inbox</a>
+                                </li>
+                                <li>
+                                    <a href="task.html"> My Task</a>
+                                </li>
+                                <li>
+                                    <a href="sent.html"> Sent Message</a>
+                                </li>
+                                <li>
+                                    <a href="archive_message.html"> Archive Message</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                       <li>
+                            <a href="#"><i class="fa fa-link fa-fw fa-2x"></i> Feeds<i class="fa arrow"></i></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Facebook <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="feeds.html">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Twitter <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Twitter 1<span class="fa arrow"></span></a>
+                                                <ul class="nav nav-third-level">
+                                                    <li>
+                                                        <a href="#">Chanchal 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Abhimanyu 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Abhi 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Pinku 1</a>
+                                                    </li>
+                                                </ul>
+                                                <!-- /.nav-third-level -->
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Twitter <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Linkedin <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+
+                                <li>
+                                    <a href="#">Instagram <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Tumblr <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Youtube <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw fa-2x"></i> Publishing<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="publishing.html"> Schedule Message</a>
+                                </li>
+                                <li>
+                                    <a href="Socio Queue.html"> Socio Queue</a>
+                                </li>
+                                <li>
+                                    <a href="draft.html"> Drafts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="Discovery.html"><i class="fa fa-edit fa-fw fa-2x"></i> Discovery</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw fa-2x"></i> Reports<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="GroupStats.html">Group Report</a>
+                                </li>
+                                <li>
+                                    <a href="TwitterReport.html">Tweeter</a>
+                                </li>
+                                <li>
+                                    <a href="TeamReport.html">Team Report</a>
+                                </li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="group.html"><i class="fa fa-users fa-fw fa-2x"></i> Group<!-- <span class="fa arrow"></span> --></a>
+                            
+                        </li>
+                          <li>
+                            <a href="#"><i class="fa fa-suitcase fa-fw fa-2x"></i>My Stuff<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="Social_Tickets.html"><i class="fa fa-ticket fa-fw fa-2x"></i>Social Tickets</a>
+                                </li>
+                                <li>
+                                    <a href="E-wallet.html"><i class="fa fa-google-wallet fa-2x fa-fw"></i>E-Wallet</a>
+                                </li>
+                                <li>
+                                    <a href="Affiliates.html"><i class="fa fa-link fa-2x fa-fw"></i>Affiliates</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+                  </nav>
+
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New Message</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-3">
+                            <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/s960x960/1523017_786750101350785_664146563_o.jpg" alt="" class="img-circle" style="height: 80px; width: 80px;">
+                            <hr class="small">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning">Action</button>
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">fb</a></li>
+                                <li><a href="#">tweeter</a></li>
+                                <li><a href="#">gplus</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="input-group col-md-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Interval Time:</p>
+                                <select class="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+            <!-- Modal SearchModal-->
+        <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                        </div>  
+                          <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-search fa-fw"></i>
+                            Search Result
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-wifi fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-close fa-fw"></i></small>
+                                    </div>
+                                </li>
+                            </ul>
+                            <pre><i class="fa fa-twitter"></i>twitter</pre>
+                             <ul class="chat">
+                                <li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-wifi fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-close fa-fw"></i></small>
+                                    </div>
+                                </li>
+                            </ul>
+                            <pre><i class="fa fa-facebook"></i>facebook</pre>
+                            <a class="btn btn-block btn-social btn-twitter">
+                                <i class="fa fa-twitter"></i> Sign in with Twitter
+                            </a>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <button type="button" class="btn btn-primary btn-md btn-block"><i class="fa fa-facebook-square fa-fw"></i>Chanchal Santra<i class="fa fa-clock-o fa-fw pull-right"></i></button>
+                            <button type="button" class="btn btn-primary btn-md btn-block"><i class="fa fa-linkedin-square fa-fw"></i>Chanchal Santra<i class="fa fa-clock-o fa-fw pull-right"></i></button>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Dashboard of sentimental analysis </h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-facebook fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">26</div>
+                                    <div>New Comments!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" onclick="showHideDiv('div-1')"> <!-- change 'div-1' depaind upon facebook & twitter -->
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-twitter fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">124</div>
+                                    <div>New Comments!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" onclick="showHideDiv('div-1')">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row" id="div-1" style="display:none;">
+                <!-- positive & negetive -->
+                <hr>
+                 <div class="col-xs-offset-2 col-lg-4 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-plus fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">2</div>
+                                    <div>Comments!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-minus fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">14</div>
+                                    <div>Comments!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end  -->
+                <div class="col-lg-8">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart of sentimental analysis
+                            <div class="pull-right">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                        Actions
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li><a href="#"><i class="fa fa-plus fa-fw"></i>Positive</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-circle-o fa-fw"></i>Neutrl</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-minus fa-fw"></i>Negative</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div id="morris-area-chart"></div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    </span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <i class="fa fa-money fa-fw"></i> Payment Received
+                                    <span class="pull-right text-muted small"><em>Yesterday</em>
+                                    </span>
+                                </a>
+                            </div>
+                            <!-- /.list-group -->
+                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+
+                   
+                </div>
+                <!-- /.col-lg-4 -->
+            
+
+             <div class="row">
+                    <div class="col-md-6">
+                        <div class=" panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Wall Posts <a href="#"><i class="fa fa-refresh pull-right"></i></a></h3>
+
+                        </div>
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <button type="button" class="btn btn-circle-green"><i class="fa fa-check"></i>
+                            </button>
+                            <button type="button" class="btn btn-info btn-circle-red"><i class="fa fa-times"></i>
+                            </button>
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago
+                                            <button type="button" class="btn btn-circle-green"><i class="fa fa-check"></i>
+                            </button>
+                        </small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <button type="button" class="btn btn-circle-red"><i class="fa fa-times"></i>
+                            </button>
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago
+                                            <button type="button" class="btn btn-circle-green"><i class="fa fa-check"></i>
+                            </button>
+                        </small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            <img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/s130x130/10629871_677646578994616_1395646501874235673_n.jpg">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="chat-panel panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> News Feeds<a href="#"><i class="fa fa-refresh pull-right"></i></a></h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                   
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                   
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                   
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            <img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/t1.0-9/s130x130/10629871_677646578994616_1395646501874235673_n.jpg">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+                    
+            
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Contents/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="Contents/js/plugins/morris/raphael.min.js"></script>
+    <script src="Contents/js/plugins/morris/morris.min.js"></script>
+    
+
+    <!-- Custom Theme JavaScript -->
+    <script src="Contents/js/sb-admin-2.js"></script>
+    <script type="text/javascript">
+
+    function showHideDiv(id){
+      var obj = document.getElementById(id);
+        if (obj.style.display=="none"){
+          obj.style.display='block';
+        } else if(obj.style.display=="block"){
+          obj.style.display='none';
+        }
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chanchal Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>SocioBoard | Publishing</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Contents/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="Contents/css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="Contents/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!--datepicker css-->
+   <!--  <link rel="stylesheet" href="Contents/css/datepicker.css">
+    <link rel="stylesheet" href="Contents/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="Contents/css/bootstrap-datetimepicker.css"> -->
+
+     <link rel="stylesheet" type="text/css" href="Contents/css/date/bootstrap-datetimepicker.min.css">
+
+
+
+     <link type="text/css" href="Contents/css/date/bootstrap-timepicker.min.css" />
+        <link type="text/css" href="Contents/css/date/bootstrap-timepicker.css" />    
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+
+            
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-chevron-down fa-fw"></i>
+                    </button>
+                    <ul class="dropdown-menu slidedown">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-star fa-fw"></i> socioboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-star fa-fw"></i> DotNet
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-star fa-fw"></i> team1
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              <div class="pull-right"><a href="">Get free Premium Account</a></div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html"><img class="img-responsive" src="Contents/img/logo.png" alt="Socio Board" style="
+    margin-top: -14px;" /></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                        <a class="active" href="home.html"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#SearchModal" style="margin-top: 10px;"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#myModal" style="margin-top: 10px;"><i class="fa fa-send-o fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-2x"></i><i class="fa fa-caret-down fa-2x"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-fw"></i> Social Media</i></a>
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook fa-fw"></i> facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin fa-fw"></i> Linkedin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube fa-fw"></i> youtube
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter fa-fw"></i> Twitter
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><i class="fa fa-bookmark fa-fw"></i> Other Account</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a class="active" href="home.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Message<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="message.html"> Smart Inbox</a>
+                                </li>
+                                <li>
+                                    <a href="task.html"> My Task</a>
+                                </li>
+                                <li>
+                                    <a href="sent.html"> Sent Message</a>
+                                </li>
+                                <li>
+                                    <a href="archive_message.html"> Archive Message</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                       <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Feeds<i class="fa arrow"></i></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Facebook <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="feeds.html">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Twitter <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Linkedin <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+
+                                <li>
+                                    <a href="#">Instagram <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Tumblr <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Youtube <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Publishing<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="publishing.html"> Schedule Message</a>
+                                </li>
+                                <li>
+                                    <a href="Socio Queue.html"> Socio Queue</a>
+                                </li>
+                                <li>
+                                    <a href="draft.html"> Drafts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="Discovery.html"><i class="fa fa-edit fa-fw"></i> Discovery</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="GroupStats.html">Group Report</a>
+                                </li>
+                                <li>
+                                    <a href="TwitterReport.html">Tweeter</a>
+                                </li>
+                                <li>
+                                    <a href="TeamReport.html">Team Report</a>
+                                </li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="group.html"><i class="fa fa-users fa-fw"></i> Group<span class="fa arrow"></span></a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+                  </nav>
+
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New Message</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-3">
+                            <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/s960x960/1523017_786750101350785_664146563_o.jpg" alt="" class="img-circle" style="height: 80px; width: 80px;">
+                            <hr class="small">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning">Action</button>
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">fb</a></li>
+                                <li><a href="#">tweeter</a></li>
+                                <li><a href="#">gplus</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="input-group col-md-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Interval Time:</p>
+                                <select class="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+            <!-- Modal SearchModal-->
+        <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+  
+  
+
+        <div id="page-wrapper">
+            
+            <div class="container-fluid">
+                <div class="col-md-12">
+                    <h1 class="page-header">Schedule Message</h1>
+                    
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <img src="Contents/img/photo.png" class="img-circle profilePic">
+                                        <img class="img-responsive img-circle msgiconPoss" src="Contents/img/twticon.png" >
+                                        <span>Chanchal</span>
+                                        <div class="btn-group pull-right">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                <i class="fa fa-chevron-down fa-2x"></i>
+                                            </button>
+                                            <ul class="dropdown-menu slidedown">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-facebook fa-fw"></i> Chanchal
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-facebook fa-fw"></i> Abhimanyu
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-twitter fa-fw"></i> Chanchal
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-twitter fa-fw"></i> Abhimanyu
+                                                    </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group pull-right">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                Add<i class="fa fa-chevron-down fa-2x"></i>
+                                            </button>
+                                            <ul class="dropdown-menu slidedown">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-facebook fa-fw"></i> Chanchal
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-facebook fa-fw"></i> Abhimanyu
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-twitter fa-fw"></i> Chanchal
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-twitter fa-fw"></i> Abhimanyu
+                                                    </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                <div class="form-group">
+                                    <label>5000</label>
+                                    <span class="pull-right btn btn-default">Chanchal Santra</span><div>Chanchal Santra1</div>
+                                    <textarea class="form-control" rows="3" placeholder="type your message here"></textarea>
+                                </div>
+                                <!-- <div class="hero-unit">
+                                    <input  type="text" placeholder="click to show datepicker"  id="example1">
+                                </div> -->
+                               <!-- <div id="datetimepicker" class="input-append date">
+                              <input type="text"></input>
+                              <span class="add-on">
+                                <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+                              </span>
+                            </div> -->
+                            
+
+                            <div class="well">
+                             <!--  <div id="datetimepicker1" class="input-append date">
+                                  <input type="text"></input>
+                                  <span class="add-on">
+                                    <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="fa fa-clock fa-fw"></i>
+                                  </span>
+                                </div> -->
+                                 <div class="input-append bootstrap-timepicker">
+                                <input id="timepicker1" type="text" class="input-small">
+                                <span class="add-on"><i class="icon-time"></i></span>
+                            </div>
+                            </div>
+                            </div>   
+                            <div class="panel-footer">
+                                
+                                    <button type="button" class="btn btn-outline btn-danger">Danger</button>
+                                    <button type="button" class="btn btn-outline btn-danger">Danger</button>
+                               
+                            </div>
+                        </div>
+                        
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="Contents/js/date/jQuery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Contents/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="Contents/js/plugins/morris/raphael.min.js"></script>
+    <script src="Contents/js/plugins/morris/morris.min.js"></script>
+
+    <!--datepicker js-->
+    // <!-- <script src="Contents/js/bootstrap-datepicker.js"></script>
+    
+    //     <script type="text/javascript" src="Contents/js/moment.js"></script> -->
+<script type="text/javascript" src="Contents/js/date/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="Contents/js/date/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="Contents/js/date/bootstrap-timepicker.js"></script>
+
+   
+    <!-- Custom Theme JavaScript -->
+    <script src="Contents/js/sb-admin-2.js"></script>
+    <script type="text/javascript">
+
+
+//     $('.popover-dismiss').popover({
+//   trigger: 'focus'
+// })
+
+//      // When the document is ready
+//             $(document).ready(function () {
+                
+//                 $('#example1').datepicker({
+//                     format: "dd/mm/yyyy"
+//                 });  
+            
+//             });
+</script>
+
+<script type="text/javascript">
+  //           $(function() {
+  //   $('#datetimepicker1').datetimepicker({
+  //     language: 'pt-BR'
+  //   });
+  // });
+    </script>
+
+<script type="text/javascript">
+            
+        </script>
+   
+    <script type="text/javascript">
+      $(function() {
+      //   $('#datetimepicker1').datetimepicker({
+      //   format: 'dd/MM/yyyy hh:mm:ss',
+      //   language: 'pt-BR'
+      // });
+        $('#timepicker1').timepicker();
+    });
+     </script>
+</body>
+
+</html>

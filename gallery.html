@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chanchal Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>SocioBoard | Home</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Contents/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="Contents/css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="Contents/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="pull-right"><a href="">Get free Premium Account</a>
+                <select class="form-control input-sm">
+                    <option>socioboard</option>
+                    <option>DotNet</option>
+                    <option>team1</option>
+                </select>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html"><img class="img-responsive" src="Contents/img/logo.png" alt="Socio Board" style="
+    margin-top: -14px;" /></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                        <a class="active" href="home.html"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#SearchModal" style="margin-top: 10px;"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#myModal" style="margin-top: 10px;"><i class="fa fa-send-o fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-2x"></i><i class="fa fa-caret-down fa-2x"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-fw"></i> Social Media</i></a>
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook fa-fw"></i> facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin fa-fw"></i> Linkedin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube fa-fw"></i> youtube
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter fa-fw"></i> Twitter
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><i class="fa fa-bookmark fa-fw"></i> Other Account</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a class="active" href="home.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Message<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="message.html"> Smart Inbox</a>
+                                </li>
+                                <li>
+                                    <a href="task.html"> My Task</a>
+                                </li>
+                                <li>
+                                    <a href="sent.html"> Sent Message</a>
+                                </li>
+                                <li>
+                                    <a href="archive_message.html"> Archive Message</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                       <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Feeds<i class="fa arrow"></i></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Facebook <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="feeds.html">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Twitter <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Linkedin <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+
+                                <li>
+                                    <a href="#">Instagram <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Tumblr <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Youtube <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Publishing<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="publishing.html"> Schedule Message</a>
+                                </li>
+                                <li>
+                                    <a href="Socio Queue.html"> Socio Queue</a>
+                                </li>
+                                <li>
+                                    <a href="draft.html"> Drafts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="Discovery.html"><i class="fa fa-edit fa-fw"></i> Discovery</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="GroupStats.html">Group Report</a>
+                                </li>
+                                <li>
+                                    <a href="TwitterReport.html">Tweeter</a>
+                                </li>
+                                <li>
+                                    <a href="TeamReport.html">Team Report</a>
+                                </li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="group.html"><i class="fa fa-users fa-fw"></i> Group<span class="fa arrow"></span></a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+                  </nav>
+
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New Message</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-3">
+                            <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/s960x960/1523017_786750101350785_664146563_o.jpg" alt="" class="img-circle" style="height: 80px; width: 80px;">
+                            <hr class="small">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning">Action</button>
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">fb</a></li>
+                                <li><a href="#">tweeter</a></li>
+                                <li><a href="#">gplus</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="input-group col-md-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Interval Time:</p>
+                                <select class="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+            <!-- Modal SearchModal-->
+        <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+        <div id="page-wrapper">
+            
+            <div class="container-fluid">      
+                <div class="row">
+                  <h2 class="page-header">My Recent Profile</h2>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive galleryImgSize">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw red"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="http://justsomething.co/wp-content/uploads/2013/11/33-most-powerful-images-23.jpeg" class="img-rounded img-responsive galleryImgSize">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive galleryImgSize">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive galleryImgSize">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                     <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive galleryImgSize">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                     <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw red"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-9">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <img src="https://pbs.twimg.com/profile_banners/2611817244/1404832809/1500x500" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="pull-left">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                        <div class=" pull-right">
+                                            <i class="fa fa-heart fa-fw"></i>
+                                            <span>1000</span>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4>Chanchal Santra is a bad boy</h4>
+                                        <h6>Abhimanyu is a good boy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+
+                </div>
+        
+     
+
+</div>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Contents/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="Contents/js/plugins/morris/raphael.min.js"></script>
+    <script src="Contents/js/plugins/morris/morris.min.js"></script>
+    
+
+    <!-- Custom Theme JavaScript -->
+    <script src="Contents/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chancahl Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>Socioboard - Generate More leads on Social Media| Social CRM | Social Media CMS</title>
+
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="Contents/js/plugins/fancybox/lib/jquery-1.8.2.min.js"></script>
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="Contents/js/plugins/fancybox/source/jquery.fancybox.js?v=2.1.3"></script>
+    <link rel="stylesheet" type="text/css" href="Contents/js/plugins/fancybox/source/jquery.fancybox.css?v=2.1.2" media="screen" />
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+    <link href="Contents/css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link rel="Stylesheet" type="text/css" href="Contents/css/smoothDivScroll.css" />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.Contents/js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <style type="text/css">
+        .fancybox-custom .fancybox-skin {
+            box-shadow: 0 0 50px #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="Contents/img/logo.png" class="img-responsive" style="margin-top: -15px;"/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Type your company name here & see your page">
+                        </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav pull-right">
+                        <li>
+                            <a href="Company.html" target="_blank">Company</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="" target="_blank">Social Engagements</a></li>
+                                <li><a href="" target="_blank">Feature List</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://socioboard.org/" target="_blank">Community</a></li>
+                                <li><a href="http://www.socioboard.com/Agency.aspx" target="_blank">Agency</a></li>
+                                <li><a href="http://www.socioboard.com/Agency.aspx" target="_blank">Enterprise</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/Pricing.aspx" target="_blank">Pricing</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insights <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://wiki.socioboard.com/index.php/Main_Page" target="_blank">Wiki</a></li>
+                                <li><a href="http://blog.socioboard.com/category/cases" target="_blank">Cases</a></li>
+                                <li><a href="http://blog.socioboard.com/" target="_blank">Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/Download.aspx" target="_blank">Download</a>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/contact.aspx" target="_blank">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal" style="margin-top: 10px;">LOGIN</button>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-at"></i></span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                            <hr class="small">
+                            <div class="input-group">
+                                <span class="input-group-addon">*</span>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <p>Forgot password?<a href="http://www.socioboard.com/ForgotPassword.aspx">Click here to restore</a></p>
+                            <hr class="small">
+                            <button type="button" class="btn btn-warning">Login</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <p>You can also Register with your social account</p>
+                            </div>
+
+                            <div class="input-group">
+                                <a id="fb_account" href="#" onclick="facebookLogin();">
+                                    <img src="Contents/img/google_icon.png" alt="">
+                                </a>
+
+                                <a id="fb_account" href="#" onclick="facebookLogin();">
+                                    <img src="Contents/img/fb_icon_lgn.png" alt="">
+                                </a>
+                                <p>Not Yet Registered?<a href="http://www.socioboard.com/Pricing.aspx">Register now!</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+    </div>
+
+
+   <section>
+
+    <div class="container margin-top-50">
+        <div class="page ">
+            <div class="inner-page">
+                <h2 class="page-headline page-title">Business is about people</h2>
+                <p>All businesses want to turn visitors into recurring accounts, to do this the key is social engagement.Responding to chats, queries, complaints etc. can tremendously help to increase number of repeat customers or better into lifetime accounts.<br>
+                Socioboard empowers its users to effectively engage their audience across numerous platforms.</p>
+            </div>
+            <hr class="small">
+          
+          <div style="padding: 16px 20px 20px 15px; box-shadow: 1px 2px 10px gray;">
+            <div class="row">
+                <div class="col-md-5">
+                    <a class="fancybox-effects-a" href="Contents/img/blogs/SocialEngagement_smart.jpg" title="Smart inbox">
+                        <img  class="img-responsive img-box-shadow" src="Contents/img/blogs/SocialEngagement_smart.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <p>
+                    Smart inbox of Socioboard is your epicenter of customer interaction.All the public posts by a user and much more would be featured on the message page along with the message picture.Users can view tasks and archived messages easily.When you click Smart Inbox, It displays all messages which are available on Facebook, LinkedIn and Twitter.You can use sort function of Profile and Message type. According to this functionality you can see particular user’s message. There are buttons available, to allot tasks, to comment on a particular post, to archive a message. </p>
+                </div>
+            </div>
+
+            <div class="row margin-top-30">
+                <div class="col-md-7">
+                    <p>Socioboard offers advanced scheduling and publishing.Publishing data is important part of engaging audience through social media platforms, through Socioboard’s publishing tool users can schedule messages, maintain a queue and save drafted messages. You can’t miss any news about what your friends are doing having a dedicated page for notifications. Mass import facility is also available through an excel file.</p>
+                </div>
+                <div class="col-md-5">
+                    <a class="fancybox-effects-a" href="Contents/img/blogs/SocialEngagement_smart.jpg" title="Socioboard offers advanced scheduling and publishing">
+                        <img  class="img-responsive img-box-shadow" src="Contents/img/blogs/SocialEngagement_pub.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="row margin-top-30">
+                <div class="col-md-5">
+                    <a class="fancybox-effects-a" href="Contents/img/blogs/SocialEngagement_smart.jpg" title="Feeds empower you to see stuff from pals and partners, all at one place">
+                        <img  class="img-responsive img-box-shadow" src="Contents/img/blogs/SocialEngagement_feeds.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <p>Feeds empower you to see stuff from pals and partners, all at one place. Users can get wall posts, statuses etc. and respond to them quickly without going through hassle of attending to things separately.In this age of information overload this functionality helps to speed things up and perform quality engagement. Users can get notifications on missed messages and much more.</p>
+                </div>
+            </div>
+
+             <div class="row margin-top-30">
+                <div class="col-md-7">
+                    <p>Collaboration on tasks is an important aspect of social engagement. Collaboration is a very important term in social media marketing, cross-functional departments can collaborate with each other to make the marketing experience more fruitful and synergistic. Socioboard comes up with a marvelous functionality by virtue of which users can make groups & reach out to each other using a highly efficient collaboration mechanism. It can serve as a platform to share information with other team members and increase workability and efficiency of all teams. </p>
+                </div>
+                <div class="col-md-5">
+                    <a class="fancybox-effects-a" href="Contents/img/blogs/SocialEngagement_smart.jpg" title="Collaboration on tasks is an important aspect of social engagement">
+                        <img  class="img-responsive img-box-shadow" src="Contents/img/blogs/SocialEngagement_team.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>GET IN TOUCH WITH US</strong>
+                    </h4>
+                    <p>L V . Complex<br>7th Block, 80 Feet Road, Koramangala Layout, Bangalore-560095</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> +91 80 4166 0003</li>
+                        <li><i class="fa fa-phone fa-fw"></i> +91 97 1331 7771</li>
+                        <li><i class="fa fa-skype fa-fw"></i> socioboard.support</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/SocioBoard" target="_blank"><i class="fa fa-facebook-square fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Socioboard" target="_blank"><i class="fa fa-twitter-square fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/company/socioboard" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/s/socioboard" target="_blank"><i class="fa fa-google-plus-square fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">COPYRIGHT © 2013 - 2014 SOCIOBOARD TECHNOLOGIES PVT. LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Google Analytics Socioboard -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58515856-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- End -->
+
+    <!-- jQuery Version 1.11.0 -->
+  <!--   // <script src="Contents/js/jquery-1.11.0.js"></script> -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Scrolls to the selected menu item on the page
+// $(function() {
+//     $('a[href*=#]:not([href=#])').click(function() {
+//         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+//             var target = $(this.hash);
+//             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//             if (target.length) {
+//                 $('html,body').animate({
+//                     scrollTop: target.offset().top
+//                 }, 1000);
+//                 return false;
+//             }
+//         }
+//     });
+// });
+</script>
+
+<!-- jQuery library - Please load it from Google API's -->
+
+
+<!-- jQuery UI (Custom Download containing only Widget and Effects Core)
+    You can make your own at: http://jqueryui.com/download -->
+    <script src="Contents/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+
+<!-- Latest version (3.1.4) of jQuery Mouse Wheel by Brandon Aaron
+    You will find it here: https://github.com/brandonaaron/jquery-mousewheel -->
+<!--     // <script src="Contents/js/jquery.mousewheel.min.js" type="text/javascript"></script> -->
+
+    <!-- jQuery Kinectic (1.8.2) used for touch scrolling -->
+    <!-- https://github.com/davetayls/jquery.kinetic/ -->
+    <script src="Contents/js/jquery.kinetic.min.js" type="text/javascript"></script>
+
+    <!-- Smooth Div Scroll 1.3 minified-->
+    <script src="Contents/js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+
+<!-- If you want to look at the uncompressed version you find it at
+    Contents/js/jquery.smoothDivScroll-1.3.js -->
+
+    <!-- Plugin initialization -->
+    <script type="text/javascript">
+// Initialize the plugin with no custom options
+$(document).ready(function () {
+// None of the options are set
+$("div#makeMeScrollable").smoothDivScroll({
+    autoScrollingMode: "onStart"
+});
+});
+</script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox').fancybox();
+
+            /*
+             *  Different effects
+             */
+
+
+            // Remove padding, set opening and closing animations, close if clicked and disable overlay
+            $(".fancybox-effects-a").fancybox({
+                padding: 0,
+
+                openEffect : 'elastic',
+                openSpeed  : 150,
+
+                closeEffect : 'elastic',
+                closeSpeed  : 150,
+
+                closeClick : true,
+
+                helpers : {
+                    overlay : null
+                }
+            });
+
+            
+        });
+    </script>
+</body>
+
+</html>

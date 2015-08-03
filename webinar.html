@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chancahl Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>Socioboard - Generate More leads on Social Media| Social CRM | Social Media CMS</title>
+
+    <script src="Contents/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+    <link href="Contents/css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <link rel="Stylesheet" type="text/css" href="Contents/css/smoothDivScroll.css" />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.Contents/js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="Contents/img/logo.png" class="img-responsive" style="margin-top: -15px;"/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav pull-right">
+                        <li>
+                            <a href="Company.html" target="_blank">Company</a>
+                        </li>
+                        <li>
+                            <a href="Features.aspx" target="_blank">Features</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://socioboard.org/" target="_blank">Community</a></li>
+                                <li><a href="http://www.socioboard.com/Agency.aspx" target="_blank">Agency</a></li>
+                                <li><a href="http://www.socioboard.com/Agency.aspx" target="_blank">Enterprise</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/Pricing.aspx" target="_blank">Pricing</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insights <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://wiki.socioboard.com/index.php/Main_Page" target="_blank">Wiki</a></li>
+                                <li><a href="http://blog.socioboard.com/category/cases" target="_blank">Cases</a></li>
+                                <li><a href="http://blog.socioboard.com/" target="_blank">Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/Download.aspx" target="_blank">Download</a>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/contact.aspx" target="_blank">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal" style="margin-top: 10px;">LOGIN</button>
+                        </li>                       
+                        <li>
+                            <form class="navbar-form navbar-left" role="search">
+                              <div class="form-group">
+                                <input type="text" class="form-control" placeholder=" Search " style="border-radius: 15px; width: 220px; padding: 0px 22px;">
+                                <button class="global-nav__search-button" name="button" type="submit"><div class="icon fa fa-search fa-fw global-nav__search-icon"></div></button>
+                              </div>                             
+                            </form>
+                        </li>
+                         <li>
+                            <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#helpModal" style="margin-top: 10px;">HELP</button>
+                        </li> 
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- Button trigger modal -->
+
+
+        <!-- helpModal -->
+        <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width: 1111px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Help Your Customers</h4>
+                    </div>
+                    <div class="modal-body col-md-12" style="background: beige">
+                        <h2 class="text-center">Make a Decision</h2>
+                        <div class="col-md-6">
+                            <!-- 4:3 aspect ratio -->
+                                <div class="embed-responsive embed-responsive-4by3">
+                                  <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                                </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Send Video in Email</h5>
+                            <div class="input-group">
+                                
+                                <label>Enter your Email Address and we'll send you an awesome video email</label>
+                            </div>
+                            <div class="input-group">
+
+                                <span class="input-group-addon"><i class="fa fa-at"></i></span>
+                                <input type="text" class="form-control" placeholder="Email ID">
+                            </div>
+                             <label>Or try it free!!</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Send Mail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of helpModal-->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-at"></i></span>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                            <hr class="small">
+                            <div class="input-group">
+                                <span class="input-group-addon">*</span>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <p>Forgot password?<a href="http://www.socioboard.com/ForgotPassword.aspx">Click here to restore</a></p>
+                            <hr class="small">
+                            <button type="button" class="btn btn-warning">Login</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <p>You can also Register with your social account</p>
+                            </div>
+
+                            <div class="input-group">
+                                <a id="fb_account" href="#" onclick="facebookLogin();">
+                                    <img src="Contents/img/google_icon.png" alt="">
+                                </a>
+
+                                <a id="fb_account" href="#" onclick="facebookLogin();">
+                                    <img src="Contents/img/fb_icon_lgn.png" alt="">
+                                </a>
+                                <p>Not Yet Registered?<a href="http://www.socioboard.com/Pricing.aspx">Register now!</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+
+
+    </div>
+
+
+ 
+
+<section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Conference</h2>
+                    <hr class="small">
+                    <p>Below you'll find the schedule of the Smashing Conference New York. And we do have some surprises for you—but they are not included in the schedule, of course. Stay updated.</p>
+                    <!-- /.row (nested) -->
+
+                    <table class="schedule">
+    
+        <tbody><tr class="text">
+      <th>08:00</th>
+      <td>Doors Open</td>      
+    </tr>
+    
+    
+        <tr class="text">
+      <th>9:00</th>
+      <td>Welcome!</td>      
+    </tr>
+    
+    
+            <tr class="talk">
+      <th>9:05</th>
+      <td>
+        <div class="talk-info">
+          <h3>Connected UX</h3>
+          <p>Though design research has become common practice at product companies, it often produces insights that slip into the hazy distance as documents get lost on a hard drive, or ignored by someone in a different department. Worse still, efforts get duplicated when communication breaks down.</p>
+
+<p>UX teams have design research down to a science, but few have discovered a way to connect qualitative and quantitative data, and long histories of research into a central clearinghouse that can be shared, searched, and maintained by different teams. Open access to information strengthens the connections between teams, and supports a general culture of inquiry. In this talk, Aarron will share with you practical methods to get off the research treadmill and get started building connections between data and teams.</p>
+        </div>        
+        <div class="speaker-info">
+          <h3><a href="">Chanchal Santra</a></h3>
+          <a class="image image-link" href="">
+            <img class="img-thumbnail" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.34.160.160/p160x160/1503360_1546243312294925_975026106327492280_n.jpg?oh=3a987877b02eaf0f76f63bc42e58b170&oe=554AAA8D&__gda__=1432357471_4538d8de962fb7a938407c78825b48be" width="250" height="250">
+        </a>
+        </div>
+      </td>
+    </tr>
+
+    
+    
+            <tr class="talk">
+      <th>9:50</th>
+      <td>
+        <div class="talk-info">
+          <h3>The Business of Design: How To Be Slightly Less Terrible At Making Money For What You Do</h3>
+          <p>Meagan will tell anyone who will listen that the business part is the hardest part of design for her, and as someone who regularly tweets about taking a day off to recover from Burrito Regret, you might be surprised she’d pretend to be an expert at managing a design company. But what all her past ineptitude means is this: I’ve made a lot of mistakes when it comes to making money for my work, and I want everyone to benefit from these failures.</p>
+
+<p>I’ll share the lessons I’ve learned about getting the work you want, ensuring a project is a success, and getting paid for it when you’re done. Before you think “well that sounds soulless, I’m going to the NBC Studio Tour during her talk,” I should also tell you that thinking hard about how to be a better business person has also made me a better human being. So come share in a celebration of us all being slightly less terrible.</p>
+        </div>        
+        <div class="speaker-info">
+          <h3><a href="">Chanchal Santra</a></h3>
+          <a class="image image-link" href="">
+            <img class="img-thumbnail" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.34.160.160/p160x160/1503360_1546243312294925_975026106327492280_n.jpg?oh=3a987877b02eaf0f76f63bc42e58b170&oe=554AAA8D&__gda__=1432357471_4538d8de962fb7a938407c78825b48be" width="250" height="250">
+        </a>
+        </div>
+      </td>
+    </tr>
+
+    
+    
+        <tr class="text">
+      <th>10:35</th>
+      <td>Morning Break</td>      
+    </tr>
+    
+    
+            <tr class="talk" >
+      <th>11:00</th>
+      <td>
+        <div class="talk-info">
+          <h3>The Elusive, Inclusive Web App</h3>
+          <p>Is it possible to build smooth, fast, app-like experiences in the browser without sacrificing the benefits in reach and accessibility that a standard approach provides? Yes... but getting there can be a bumpy road. In this talk, Scott will share some problems encountered, lessons learned, and battles won in the process of chasing the elusive, inclusive web app.</p>
+        </div>        
+        <div class="speaker-info">
+          <h3><a href="">Chanchal</a></h3>
+          <a class="image image-link" href="">
+            <img class="img-thumbnail" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.34.160.160/p160x160/1503360_1546243312294925_975026106327492280_n.jpg?oh=3a987877b02eaf0f76f63bc42e58b170&oe=554AAA8D&__gda__=1432357471_4538d8de962fb7a938407c78825b48be" width="250" height="250">
+        </a>
+        </div>
+      </td>
+    </tr>
+
+    
+    
+            <tr class="talk" >
+      <th>11:45</th>
+      <td>
+        <div class="talk-info">
+          <h3>Fonts on the Web, and fonts FOR the Web</h3>
+          <p>What does it mean for a typeface to be visually, technologically, and culturally appropriate to the Web? Join H&amp;Co's Jonathan Hoefler on an exploration of how typography can make the Web a more expressive medium for designers, and a more rewarding one for readers.</p>
+        </div>        
+        <div class="speaker-info">
+          <h3><a href="">Chanchal Santra</a></h3>
+          <a class="image image-link" href="">
+            <img class="img-thumbnail" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.34.160.160/p160x160/1503360_1546243312294925_975026106327492280_n.jpg?oh=3a987877b02eaf0f76f63bc42e58b170&oe=554AAA8D&__gda__=1432357471_4538d8de962fb7a938407c78825b48be" width="250" height="250" alt="Chanchal Santra">
+        </a>
+        </div>
+      </td>
+    </tr>
+
+    
+    
+        <tr class="text">
+      <th>12:30</th>
+      <td>Lunch Break</td>      
+    </tr>
+    
+    
+            <tr class="talk">
+      <th>14:00</th>
+      <td>
+        <div class="talk-info">
+          <h3>Responsive Design: Whose Problem Is It?</h3>
+          <p>Over the last few years, there has been a lot of talk about responsive design. Almost every website now aspires to be responsive by default. Designers have been scrambling to find ways to design and cope with the additional pressures that requests for responsive design imposes upon us. I had previously made (apparently a convincing argument) of <a href="https://www.youtube.com/watch?v=h52uumn3sZc">designing in the browser</a>. But talking to more than 40 designers has made me realize that there is more at play and why it may not be a good idea to insist on designers learning to code Web technologies.</p>
+        </div>        
+        <div class="speaker-info">
+          <h3><a href="">Chanchal Santra</a></h3>
+          <a class="image image-link" href="">
+            <img class="img-thumbnail" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.34.160.160/p160x160/1503360_1546243312294925_975026106327492280_n.jpg?oh=3a987877b02eaf0f76f63bc42e58b170&oe=554AAA8D&__gda__=1432357471_4538d8de962fb7a938407c78825b48be" width="250" height="250" >
+        </a>
+        </div>
+      </td>
+    </tr>
+
+    
+    
+            <tr class="talk" >
+      <th>14:45</th>
+      <td>
+        <div class="talk-info">
+          <h3>Building For Performance and Resilience</h3>
+          <p>The case for fast loading websites has been made. We can point to case studies from companies like Amazon, Google, and Yahoo, linking page speed to increased revenue and profit (although it never hurts to remind ourselves!). Businesses understand this, and orders are coming from the top of the organization to speed up the site. So now we've decided to prioritize performance, what should we actually do? What should we be measuring? How should we be measuring it? And where do we start improving things?</p>
+
+<p>This talk will focus on architecting high performance, resilient front-ends. It will look end-to-end at how web pages get from a server to the screen on a user's device. It will cover how to prioritize and optimize that process, and look at tools for measuring and monitoring the right performance metrics over time, as well as other lessons from Andy's recent work on large scale sites like the <em>Guardian</em> and <em>Twitter</em>.</p>
+        </div>        
+        <div class="speaker-info">
+          <h3><a href="">Chanchal</a></h3>
+          <a class="image image-link" href="">
+            <img class="img-thumbnail" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.34.160.160/p160x160/1503360_1546243312294925_975026106327492280_n.jpg?oh=3a987877b02eaf0f76f63bc42e58b170&oe=554AAA8D&__gda__=1432357471_4538d8de962fb7a938407c78825b48be" width="250" height="250" >
+        </a>
+        </div>
+      </td>
+    </tr>
+
+    
+    
+        <tr class="text">
+      <th>15:30</th>
+      <td>Afternoon Break</td>      
+    </tr>
+    
+    
+            <tr class="talk">
+      <th>16:00</th>
+      <td>
+        <div class="talk-info">
+          <h3>Hard-Won Lessons in Responsive Email Design</h3>
+          <p>Email is one of the most important ways you can connect with your audience. With the majority of people now reading email on mobile devices, creating robust responsive templates is no longer optional — it's the new standard practice. Unfortunately, email design is still considered a dark art, and its steep learning curve can be daunting. In this talk, Fabio will present techniques for designing and developing email along with strategies for optimizing user experience in email clients that make the task more simple and less frustrating.</p>
+        </div>        
+        <div class="speaker-info">
+          <h3><a href="">Chanchal</a></h3>
+          <a class="image image-link" href="">
+            <img class="img-thumbnail" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.34.160.160/p160x160/1503360_1546243312294925_975026106327492280_n.jpg?oh=3a987877b02eaf0f76f63bc42e58b170&oe=554AAA8D&__gda__=1432357471_4538d8de962fb7a938407c78825b48be" width="250" height="250">
+        </a>
+        </div>
+      </td>
+    </tr>
+
+    
+    
+            <tr class="talk" >
+      <th>16:45</th>
+      <td>
+        <div class="talk-info">
+          <h3>My Handbook</h3>
+          <p>Over the years, every designer picks up a ton of little tips and tricks along the way. Scraps of code, ways of doing things, stories of how not to do it, and how to do it. In this talk, Mark will share some thoughts from his notebook. You'll hear tales of designing by committee, the death of typesetting, content mountains and what happened when he led a team of designers in India for a week.</p>
+        </div>        
+        <div class="speaker-info">
+          <h3><a href="">Chanchal</a></h3>
+          <a class="image image-link" href="">
+            <img class="img-thumbnail" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpf1/v/t1.0-1/c0.34.160.160/p160x160/1503360_1546243312294925_975026106327492280_n.jpg?oh=3a987877b02eaf0f76f63bc42e58b170&oe=554AAA8D&__gda__=1432357471_4538d8de962fb7a938407c78825b48be" width="250" height="250">
+        </a>
+        </div>
+      </td>
+    </tr>
+
+    
+    
+        <tr class="text">
+      <th>20:30</th>
+      <td>Party Time!</td>      
+    </tr>
+    
+      </tbody></table>
+
+
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>GET IN TOUCH WITH US</strong>
+                    </h4>
+                    <p>L V . Complex<br>7th Block, 80 Feet Road, Koramangala Layout, Bangalore-560095</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> +91 80 4166 0003</li>
+                        <li><i class="fa fa-phone fa-fw"></i> +91 97 1331 7771</li>
+                        <li><i class="fa fa-skype fa-fw"></i> socioboard.support</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/SocioBoard" target="_blank"><i class="fa fa-facebook-square fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Socioboard" target="_blank"><i class="fa fa-twitter-square fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com/company/socioboard" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/s/socioboard" target="_blank"><i class="fa fa-google-plus-square fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">COPYRIGHT © 2013 - 2014 SOCIOBOARD TECHNOLOGIES PVT. LTD. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Scrolls to the selected menu item on the page
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+    <!-- Google Analytics Socioboard -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58515856-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- End -->
+
+<!-- jQuery library - Please load it from Google API's -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+<!-- jQuery UI (Custom Download containing only Widget and Effects Core)
+    You can make your own at: http://jqueryui.com/download -->
+    <script src="Contents/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+
+<!-- Latest version (3.1.4) of jQuery Mouse Wheel by Brandon Aaron
+    You will find it here: https://github.com/brandonaaron/jquery-mousewheel -->
+    <script src="Contents/js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+    <!-- jQuery Kinectic (1.8.2) used for touch scrolling -->
+    <!-- https://github.com/davetayls/jquery.kinetic/ -->
+    <script src="Contents/js/jquery.kinetic.min.js" type="text/javascript"></script>
+
+    <!-- Smooth Div Scroll 1.3 minified-->
+    <script src="Contents/js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+
+
+<!-- If you want to look at the uncompressed version you find it at
+    Contents/js/jquery.smoothDivScroll-1.3.js -->
+
+    <!-- Plugin initialization -->
+    <script type="text/javascript">
+// Initialize the plugin with no custom options
+$(document).ready(function () {
+// None of the options are set
+$("div#makeMeScrollable").smoothDivScroll({
+    autoScrollingMode: "onStart"
+});
+});
+</script>
+
+
+
+</body>
+
+</html>

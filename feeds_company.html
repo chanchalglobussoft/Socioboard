@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chanchal Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>SocioBoard | Feeds</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Contents/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="Contents/css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="Contents/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="Contents/css/jquery.mCustomScrollbar.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+         <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="pull-right"><a href="">Get free Premium Account</a>
+                <select class="form-control input-sm">
+                    <option>socioboard</option>
+                    <option>DotNet</option>
+                    <option>team1</option>
+                </select>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html"><img class="img-responsive" src="Contents/img/logo.png" alt="Socio Board" style="
+    margin-top: -14px;" /></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                        <a class="active" href="home.html"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#SearchModal" style="margin-top: 10px;"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#myModal" style="margin-top: 10px;"><i class="fa fa-send-o fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-2x"></i><i class="fa fa-caret-down fa-2x"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-fw"></i> Social Media</i></a>
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook fa-fw"></i> facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin fa-fw"></i> Linkedin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube fa-fw"></i> youtube
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter fa-fw"></i> Twitter
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><i class="fa fa-bookmark fa-fw"></i> Other Account</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a class="active" href="home.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Message<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="message.html"> Smart Inbox</a>
+                                </li>
+                                <li>
+                                    <a href="task.html"> My Task</a>
+                                </li>
+                                <li>
+                                    <a href="sent.html"> Sent Message</a>
+                                </li>
+                                <li>
+                                    <a href="archive_message.html"> Archive Message</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                       <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Feeds<i class="fa arrow"></i></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Facebook <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="feeds.html">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Twitter <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Linkedin <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+
+                                <li>
+                                    <a href="#">Instagram <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Tumblr <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Youtube <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Publishing<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="publishing.html"> Schedule Message</a>
+                                </li>
+                                <li>
+                                    <a href="Socio Queue.html"> Socio Queue</a>
+                                </li>
+                                <li>
+                                    <a href="draft.html"> Drafts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="Discovery.html"><i class="fa fa-edit fa-fw"></i> Discovery</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="GroupStats.html">Group Report</a>
+                                </li>
+                                <li>
+                                    <a href="TwitterReport.html">Tweeter</a>
+                                </li>
+                                <li>
+                                    <a href="TeamReport.html">Team Report</a>
+                                </li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="group.html"><i class="fa fa-users fa-fw"></i> Group<span class="fa arrow"></span></a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+                  </nav>
+
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New Message</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-3">
+                            <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/s960x960/1523017_786750101350785_664146563_o.jpg" alt="" class="img-circle" style="height: 80px; width: 80px;">
+                            <hr class="small">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning">Action</button>
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">fb</a></li>
+                                <li><a href="#">tweeter</a></li>
+                                <li><a href="#">gplus</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="input-group col-md-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Interval Time:</p>
+                                <select class="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+            <!-- Modal SearchModal-->
+        <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+  
+
+        <div id="page-wrapper">
+            
+            <div class="container-fluid">
+                <h1 class="page-header"><i class="fa fa-institution"></i>Company Name</h1>
+         
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bookmark fa-fw"></i>Description
+                        </div>
+                        <div class="panel-body">
+                            <img src="Contents/img/search_comp/microsoft.png">
+                            <p>Come as you are. Do what you love.<br>
+                                At Microsoft we help people and businesses throughout the world realize their full potential.<br>
+                                We make this simple mission come to life every day through our passion to create technologies and develop products that touch just about every kind of customer. <br>
+                                Working at Microsoft gives you the opportunity to do things that make a real difference in millions, even billions, of lives. To reach your full potential. <br>
+                                So why not take a closer look at Microsoft? We think you’ll find that amazing things really do happen here</p>
+                            <pre><strong>Specialties</strong>
+                                <br>Business Software, Design Tools, Developer Tools, Entertainment Products, Hardware, Home &amp; Educational Software, Tablets, Search, Advertising, Servers, Windows Operating System, Windows Applications &amp; Platforms, Smartphones, Cloud Computing</pre>
+                            <dl class="col-md-4">
+                                <dt>Website</dt>
+                                <dd>http://www.microsoft.com/</dd>
+                                <dt>Industry</dt>
+                                <dd>Computer Software</dd>
+                            </dl>
+                            <dl class="col-md-4">
+                                <dt>Type</dt>
+                                <dd>Public Company</dd>
+                                <dt>Headquarters</dt>
+                                <dd>1 Microsoft Way Redmond, WA 98052 United States</dd>
+                            </dl>
+                            <dl class="col-md-4">
+                               <dt>Company Size</dt>
+                                <dd>10,001+ employees</dd>
+                                <dt>Founded</dt>
+                                <dd>1975</dd>
+                            </dl>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+
+
+                    <div class="col-md-12">
+                        <div class="chat-panel panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> News Feeds<a href="#"><i class="fa fa-refresh pull-right"></i></a></h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://media.licdn.com/media/p/1/000/1c0/2ef/2042035.png" class="img-rounded profilePic" alt="User Avatar">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Microsoft</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment <span class="badge">42</span>
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"> <span class="badge">42</span></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://media.licdn.com/media/p/1/000/1c0/2ef/2042035.png" class="img-rounded profilePic" alt="User Avatar">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Microsoft</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment <span class="badge">42</span>
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i> <span class="badge">42</span>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://media.licdn.com/media/p/1/000/1c0/2ef/2042035.png" class="img-rounded profilePic" alt="User Avatar">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Microsoft</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://media.licdn.com/media/p/1/000/1c0/2ef/2042035.png" class="img-rounded profilePic" alt="User Avatar">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Microsoft</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://media.licdn.com/media/p/1/000/1c0/2ef/2042035.png" class="img-rounded profilePic" alt="User Avatar">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Microsoft</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="https://media.licdn.com/media/p/1/000/1c0/2ef/2042035.png" class="img-rounded profilePic" alt="User Avatar">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Microsoft</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="https://media.licdn.com/media/p/1/000/1c0/2ef/2042035.png" class="img-rounded profilePic" alt="User Avatar">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <strong class="primary-font">Microsoft</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            <img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/10322616_1482878475298076_5762422417533193460_n.jpg?oh=a9b2101a10454de06ca4cdc4cf722297&oe=54C1B708&__gda__=1422717059_dd67cd52a8743aa68452d9f9ced9dfff">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                    <div class="input-group">
+                                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your comment here...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                                Comment
+                                            </button>
+                                            <button type="button" class="btn btn-info btn-circle"><i class="fa fa-thumbs-o-up"></i>
+                                    </button>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-rounded">
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div>
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Microsoft</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+            
+                </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Contents/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="Contents/js/plugins/morris/raphael.min.js"></script>
+    <script src="Contents/js/plugins/morris/morris.min.js"></script>
+ 
+    <script type="text/javascript" src="Contents/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="Contents/js/sb-admin-2.js"></script>
+    <script type="text/javascript">
+    $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+
+    </script>
+<script>
+    (function($){
+        $(window).load(function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+</body>
+
+</html>

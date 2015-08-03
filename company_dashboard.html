@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chancahl Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>Socioboard - Company_Dashboard</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+    <link href="Contents/css/boardme.css" rel="stylesheet">
+    <link href="Contents/css/custom.css" rel="stylesheet">
+    <link href="Contents/css/animate.css" rel="stylesheet">
+    <link href="Contents/css/plugins/components.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Contents/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Social Buttons CSS -->
+    <link href="Contents/css/plugins/social-buttons.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="Contents/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
+
+    <link rel="Stylesheet" type="text/css" href="Contents/css/smoothDivScroll.css" />
+
+    <!-- Google Analytics Socioboard -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-58515856-3', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End -->
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="Contents/js/blocksit.min.js"></script>
+<script>
+$(document).ready(function() {
+//vendor script
+$('#header')
+.css({ 'top':-50 })
+.delay(1000)
+.animate({'top': 0}, 800);
+
+$('#footer')
+.css({ 'bottom':-15 })
+.delay(1000)
+.animate({'bottom': 0}, 800);
+
+//blocksit define
+$(window).load( function() {
+    $('#container').BlocksIt({
+        numOfCol: 4,
+        offsetX: 8,
+        offsetY: 8
+    });
+});
+
+//window resize
+var currentWidth = 1100;
+$(window).resize(function() {
+    var winWidth = $(window).width();
+    var conWidth;
+    if(winWidth < 660) {
+        conWidth = 440;
+        col = 2
+    } else if(winWidth < 880) {
+        conWidth = 660;
+        col = 3
+    } else if(winWidth < 1100) {
+        conWidth = 880;
+        col = 4;
+    } else {
+        conWidth = 1100;
+        col = 4;
+    }
+
+    if(conWidth != currentWidth) {
+        currentWidth = conWidth;
+        $('#container').width(conWidth);
+        $('#container').BlocksIt({
+            numOfCol: col,
+            offsetX: 8,
+            offsetY: 8
+        });
+    }
+});
+});
+</script>
+</head>
+<body style="background-color: #F1F1F1;">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=1551064375135193";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="Contents/img/logo.png" class="img-responsive" style="margin-top: -15px;"/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav pull-right">
+                        <li>
+                            <a href="http://www.socioboard.com/Company.aspx" target="_blank">Company</a>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/Features.aspx" target="_blank">Features</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://socioboard.org/" target="_blank">Community</a></li>
+                                <li><a href="http://www.socioboard.com/Agency.aspx" target="_blank">Agency</a></li>
+                                <li><a href="http://www.socioboard.com/Agency.aspx" target="_blank">Enterprise</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/Pricing.aspx" target="_blank">Pricing</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insights <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="http://wiki.socioboard.com/index.php/Main_Page" target="_blank">Wiki</a></li>
+                                <li><a href="http://blog.socioboard.com/category/cases" target="_blank">Cases</a></li>
+                                <li><a href="http://blog.socioboard.com/" target="_blank">Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/Download.aspx" target="_blank">Download</a>
+                        </li>
+                        <li>
+                            <a href="http://www.socioboard.com/contact.aspx" target="_blank">Contact Us</a>
+                        </li>
+
+                        <li>
+                            <form class="navbar-form navbar-left" role="search">
+                              <div class="form-group">
+                                <input type="text" class="form-control" placeholder=" Search " style="border-radius: 15px; width: 220px; padding: 0px 22px;">
+                                <button class="global-nav__search-button" name="button" type="submit"><div class="icon fa fa-search fa-fw global-nav__search-icon"></div></button>
+                              </div>                             
+                            </form>
+                        </li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->            
+
+            <div class='sidebarShare'>
+                <lable class="btn btn-block btn-sm btn-social btn-default disabled">
+                    <i class="fa fa-share-alt"></i> Share
+                </lable>
+                <a class="btn btn-block btn-sm btn-social btn-facebook">
+                    <i class="fa fa-facebook"></i> Share
+                </a>
+                <a class="btn btn-block btn-sm btn-social btn-linkedin">
+                    <i class="fa fa-linkedin"></i> Share
+                </a>
+            </div>
+        </nav>
+        <!-- Button trigger modal -->
+    </div>
+    <!--container end-->
+
+    <!-- Content -->
+    <div class="container">
+        <div class="portlet">
+            <header id="top" class="header_company_dashboard" style="background-image: url(https://media.licdn.com/media/AAEAAQAAAAAAAALNAAAAJDEzNDk3ODY0LWUxZTQtNDlkMi1hOTRiLTc2NDI5NWM2ZWY3NA.png);">
+                <div class="text-vertical-center">
+                    <img src="Contents/img/search_comp/logo_company_default.png" class="galleryImgSize">
+                    <h1 style="text-shadow: 0px 0px 15px #ffffff; margin-top: 50px; color: rgb(94, 94, 94) !Important;">#Apple</h1>
+                </div>
+            </header>
+            <div class="text-center margin-top-10">
+                <a href="#" data-original-title="Home" class="social-icon"><i class="fa fa-home fa-2x fa-fw"></i></a>
+                <a href="javascript:;" data-original-title="facebook" class="social-icon facebook"></a>
+                <a href="javascript:;" data-original-title="linkedin" class="social-icon linkedin"></a>
+                <a href="javascript:;" data-original-title="tumblr" class="social-icon tumblr"></a>
+                <a href="javascript:;" data-original-title="twitter" class="social-icon twitter"></a>
+                <a href="javascript:;" data-original-title="youtube" class="social-icon youtube"></a>
+                <a href="javascript:;" data-original-title="Goole Plus" class="social-icon googleplus"></a>
+                <a href="javascript:;" data-original-title="instagram" class="social-icon instagram"></a>
+            </div>
+        </div>
+            <div class="portlet light">
+                <div class="portlet-title">
+                    <div class="caption">
+                        <i class="fa fa-dashboard"></i>DashBoard of #Apple
+                    </div>
+                    <div class="tools">
+                        <a href="javascript:;" class="collapse" data-original-title="" title="">
+                        </a>
+                        <a href="javascript:;" class="remove" data-original-title="" title="">
+                        </a>
+                    </div>
+                </div>
+                <div class="portlet-body text-center">
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-group"></i>
+                    <div>
+                         Users
+                    </div>
+                    <span class="badge badge-danger">
+                    2 </span>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-barcode"></i>
+                    <div>
+                         Products
+                    </div>
+                    <span class="badge badge-success">
+                    4 </span>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-bar-chart-o"></i>
+                    <div>
+                         Reports
+                    </div>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-sitemap"></i>
+                    <div>
+                         Categories
+                    </div>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-calendar"></i>
+                    <div>
+                         Calendar
+                    </div>
+                    <span class="badge badge-success">
+                    4 </span>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-envelope"></i>
+                    <div>
+                         Inbox
+                    </div>
+                    <span class="badge badge-info">
+                    12 </span>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-bullhorn"></i>
+                    <div>
+                         Notification
+                    </div>
+                    <span class="badge badge-danger">
+                    3 </span>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-map-marker"></i>
+                    <div>
+                         Locations
+                    </div>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-money"><i></i></i>
+                    <div>
+                         Finance
+                    </div>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-plane"></i>
+                    <div>
+                         Projects
+                    </div>
+                    <span class="badge badge-info">
+                    21 </span>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-thumbs-up"></i>
+                    <div>
+                         Feedback
+                    </div>
+                    <span class="badge badge-info">
+                    2 </span>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-cloud"></i>
+                    <div>
+                         Servers
+                    </div>
+                    <span class="badge badge-danger">
+                    2 </span>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-globe"></i>
+                    <div>
+                         Regions
+                    </div>
+                    </a>
+                    <a href="javascript:;" class="icon-btn">
+                    <i class="fa fa-heart-o"></i>
+                    <div>
+                         Popularity
+                    </div>
+                    <span class="badge badge-info">
+                    221 </span>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="col-lg-4 col-md-6">
+                <div class="panel panel-sky img-box-shadow">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-star-o fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right" style="color: rgb(105, 100, 100) !important;">
+                                <div class="huge">23</div>
+                                <div>Total Favorites&rlm;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="panel panel-sky img-box-shadow">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-twitch fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right" style="color: rgb(105, 100, 100) !important;">
+                                <div class="huge">14</div>
+                                <div>Total Tweets&rlm;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6">
+                <div class="panel panel-sky img-box-shadow">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-twitch fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right" style="color: rgb(105, 100, 100) !important;">
+                                <div class="huge">14</div>
+                                <div>Total Tweets&rlm;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="icon-bubble font-red-sunglo"></i>
+                                <span class="caption-subject font-red-sunglo bold uppercase">Chats</span>
+                            </div>
+                            <div class="tools">
+                                <a href="javascript:;" class="collapse" data-original-title="" title="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portlet-body" id="chats">
+                            <div class="scroller" style="height: 341px;" data-always-visible="1" data-rail-visible1="1">
+                                <ul class="chats">
+                                    <li class="in">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Bob Nilson </a>
+                                            <span class="datetime">
+                                            at 20:09 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                            <div>
+                                             <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reply">
+                                                    <i class="fa fa-share fa-fw"></i>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Retweet">
+                                                    <i class="fa fa-retweet fa-fw"></i>99
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
+                                                    <i class="fa fa-star fa-fw"></i>199
+                                                </a>
+                                            <div class="pull-right">
+                                                <div class="btn-group">
+                                                    <span type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" data-placement="top" title="More">
+                                                        <i class="fa fa-bars"></i>
+                                                    </span>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li>
+                                                            <a href="#">Quote Message</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Email Message</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Report as spam</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Lisa Wong </a>
+                                            <span class="datetime">
+                                            at 20:11 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="in">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Bob Nilson </a>
+                                            <span class="datetime">
+                                            at 20:30 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Richard Doe </a>
+                                            <span class="datetime">
+                                            at 20:33 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="in">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Richard Doe </a>
+                                            <span class="datetime">
+                                            at 20:35 </span>
+                                            <span class="body">
+                                                <img src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/13724_1578251015760821_8705940826929931531_n.jpg?oh=4c446ed8d49f7193143ee70cc694b438&amp;oe=55CBAF89" class="img-responsive">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Bob Nilson </a>
+                                            <span class="datetime">
+                                            at 20:40 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="in">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Richard Doe </a>
+                                            <span class="datetime">
+                                            at 20:40 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Bob Nilson </a>
+                                            <span class="datetime">
+                                            at 20:54 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. sed diam nonummy nibh euismod tincidunt ut laoreet. </span>
+                                        </div>
+                                        <div>
+                                             <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reply">
+                                                    <i class="fa fa-share fa-fw"></i>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Retweet">
+                                                    <i class="fa fa-retweet fa-fw"></i>99
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
+                                                    <i class="fa fa-star fa-fw"></i>199
+                                                </a>
+                                            <div class="pull-right">
+                                                <div class="btn-group">
+                                                    <span type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" data-placement="top" title="More">
+                                                        <i class="fa fa-bars"></i>
+                                                    </span>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li>
+                                                            <a href="#">Quote Message</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Email Message</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Report as spam</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chat-form">
+                                <div class="input-cont">
+                                    <input class="form-control" type="text" placeholder="Type a message here..."/>
+                                </div>
+                                <div class="btn-cont">
+                                    <span class="arrow">
+                                    </span>
+                                    <a href="" class="btn blue icn-only">
+                                    <i class="fa fa-check icon-white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+              <div class="col-md-6">
+               <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption">
+                                <i class="icon-bubble font-red-sunglo"></i>
+                                <span class="caption-subject font-red-sunglo bold uppercase">Chats</span>
+                            </div>
+                            <div class="tools">
+                                <a href="javascript:;" class="collapse" data-original-title="" title="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portlet-body" id="chats">
+                            <div class="scroller" style="height: 341px;" data-always-visible="1" data-rail-visible1="1">
+                                <ul class="chats">
+                                    <li class="in">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Bob Nilson </a>
+                                            <span class="datetime">
+                                            at 20:09 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                            <div>
+                                             <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reply">
+                                                    <i class="fa fa-share fa-fw"></i>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Retweet">
+                                                    <i class="fa fa-retweet fa-fw"></i>99
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
+                                                    <i class="fa fa-star fa-fw"></i>199
+                                                </a>
+                                            <div class="pull-right">
+                                                <div class="btn-group">
+                                                    <span type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" data-placement="top" title="More">
+                                                        <i class="fa fa-bars"></i>
+                                                    </span>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li>
+                                                            <a href="#">Quote Message</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Email Message</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Report as spam</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Lisa Wong </a>
+                                            <span class="datetime">
+                                            at 20:11 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="in">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Bob Nilson </a>
+                                            <span class="datetime">
+                                            at 20:30 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Richard Doe </a>
+                                            <span class="datetime">
+                                            at 20:33 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="in">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Richard Doe </a>
+                                            <span class="datetime">
+                                            at 20:35 </span>
+                                            <span class="body">
+                                                <img src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/13724_1578251015760821_8705940826929931531_n.jpg?oh=4c446ed8d49f7193143ee70cc694b438&amp;oe=55CBAF89" class="img-responsive">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Bob Nilson </a>
+                                            <span class="datetime">
+                                            at 20:40 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="in">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Richard Doe </a>
+                                            <span class="datetime">
+                                            at 20:40 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                                        </div>
+                                    </li>
+                                    <li class="out">
+                                        <img class="avatar" alt="" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xaf1/v/t1.0-1/c0.51.160.160/p160x160/10406756_1110316545660804_6879319096999314488_n.jpg?oh=3660b88473f7d2894bff3eb2578ff989&oe=5650F9E7&__gda__=1448523275_8fbb74dc1489df0273e0d03d5c9af994"/>
+                                        <div class="message">
+                                            <span class="arrow">
+                                            </span>
+                                            <a href="javascript:;" class="name">
+                                            Bob Nilson </a>
+                                            <span class="datetime">
+                                            at 20:54 </span>
+                                            <span class="body">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. sed diam nonummy nibh euismod tincidunt ut laoreet. </span>
+                                        </div>
+                                        <div>
+                                             <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Reply">
+                                                    <i class="fa fa-share fa-fw"></i>
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Retweet">
+                                                    <i class="fa fa-retweet fa-fw"></i>99
+                                                </a>
+                                                <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Favorite">
+                                                    <i class="fa fa-star fa-fw"></i>199
+                                                </a>
+                                            <div class="pull-right">
+                                                <div class="btn-group">
+                                                    <span type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" data-placement="top" title="More">
+                                                        <i class="fa fa-bars"></i>
+                                                    </span>
+                                                    <ul class="dropdown-menu pull-right" role="menu">
+                                                        <li>
+                                                            <a href="#">Quote Message</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Email Message</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Report as spam</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chat-form">
+                                <div class="input-cont">
+                                    <input class="form-control" type="text" placeholder="Type a message here..."/>
+                                </div>
+                                <div class="btn-cont">
+                                    <span class="arrow">
+                                    </span>
+                                    <a href="" class="btn blue icn-only">
+                                    <i class="fa fa-check icon-white"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    <section id="wrapper">
+        <div id="container">            
+            <div class="grid animated slideInDown">
+                <div class="text-center">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <img src="http://www.inwebson.com/demo/blocksit-js/demo2/images/img27.jpg" />
+                </div>
+                <a href="#" target="_blank">
+                    <strong>Sunset Lake</strong>
+                    <p>A peaceful sunset view g rg g rdh dfh h h tshgtf hf j...</p>
+                </a>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div class="pull-left">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Reply"><i class="fa fa-reply fa-fw"></i>9</a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Retweet"><i class="fa fa-retweet fa-fw"></i>99</a>
+                        <a href="#" data-toggle="tooltip" data-placement="right" title="Favorite"><i class="fa fa-star fa-fw"></i>999</a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <img src="https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11263639_1643089089240365_813759307_n.jpg" />
+                </div>
+                <strong>Chanchal Santra</strong>
+                <p>Here's to help you upgrade your culinary skills. Get it here: <a href="">http://spr.ly/6180fnYE</a></p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-pinterest fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <iframe id="video_embed" frameborder="0" allowfullscreen="1" title="YouTube video player" height="100%" width="100%" src="http://www.izlesene.com/player/izlesene.swf?timestamp=14291735799?autoplay=0&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.google.com"></iframe>
+                </div>
+                <strong>Autumn</strong>
+                <p>The fall of the tree...</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                     <p>Weekend Reading: The Halo universe expands.</p>
+                        <img class="thum_img_size" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090" alt="...">
+                </div>
+                <h5><strong>Weekend Reading: April 17 Edition</strong></h5>
+                        <p>Your weekly news you may have missed from Microsoft.</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <img src="http://www.inwebson.com/demo/blocksit-js/demo2/images/img27.jpg" />
+                </div>
+                <strong>Sunset Lake</strong>
+                <p>A peaceful sunset view...</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <img src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090" />
+                </div>
+                <strong>Chanchal Santra</strong>
+                <p>Here's to help you upgrade your culinary skills. Get it here: <a href="">http://spr.ly/6180fnYE</a></p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-pinterest fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <iframe id="video_embed" frameborder="0" allowfullscreen="1" title="YouTube video player" height="100%" width="100%" src="http://www.izlesene.com/player/izlesene.swf?timestamp=14291735799?autoplay=0&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.google.com"></iframe>
+                </div>
+                <strong>Autumn</strong>
+                <p>The fall of the tree...</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                     <p>Weekend Reading: The Halo universe expands.</p>
+                        <img class="thum_img_size" src="https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11376250_854026241332707_487170647_n.jpg" alt="...">
+                </div>
+                <h5><strong>Weekend Reading: April 17 Edition</strong></h5>
+                        <p>Your weekly news you may have missed from Microsoft.</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <img src="http://www.inwebson.com/demo/blocksit-js/demo2/images/img27.jpg" />
+                </div>
+                <strong>Sunset Lake</strong>
+                <p>A peaceful sunset view...</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <img src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090" />
+                </div>
+                <strong>Chanchal Santra</strong>
+                <p>Here's to help you upgrade your culinary skills. Get it here: <a href="">http://spr.ly/6180fnYE</a></p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-pinterest fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <iframe id="video_embed" frameborder="0" allowfullscreen="1" title="YouTube video player" height="100%" width="100%" src="http://www.izlesene.com/player/izlesene.swf?timestamp=14291735799?autoplay=0&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.google.com"></iframe>
+                </div>
+                <strong>Autumn</strong>
+                <p>The fall of the tree...</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                     <p>Weekend Reading: The Halo universe expands.</p>
+                        <img class="thum_img_size" src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11333374_1641559019417753_1437314792_n.jpg" alt="...">
+                </div>
+                <h5><strong>Weekend Reading: April 17 Edition</strong></h5>
+                        <p>Your weekly news you may have missed from Microsoft.</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <img src="http://www.inwebson.com/demo/blocksit-js/demo2/images/img27.jpg" />
+                </div>
+                <strong>Sunset Lake</strong>
+                <p>A peaceful sunset view...</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <img src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090" />
+                </div>
+                <strong>Chanchal Santra</strong>
+                <p>Here's to help you upgrade your culinary skills. Get it here: <a href="">http://spr.ly/6180fnYE</a></p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-pinterest fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                    <iframe id="video_embed" frameborder="0" allowfullscreen="1" title="YouTube video player" height="100%" width="100%" src="http://www.izlesene.com/player/izlesene.swf?timestamp=14291735799?autoplay=0&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.google.com"></iframe>
+                </div>
+                <strong>Autumn</strong>
+                <p>The fall of the tree...</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="text-center">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </div>
+                <div class="imgholder">
+                     <p>Weekend Reading: The Halo universe expands.</p>
+                        <img class="thum_img_size" src="https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xft1/t51.2885-15/10576084_1152990191383485_1940693283_n.jpg" alt="...">
+                </div>
+                <h5><strong>Weekend Reading: April 17 Edition</strong></h5>
+                        <p>Your weekly news you may have missed from Microsoft.</p>
+                <div class="meta">
+                    <div class="list-group-item" href="#">
+                        <img class="avatar" src="https://scontent-ams.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10154325_850400818319046_6328835026567166562_n.jpg?oh=63a0df8faee8d6b4c88475eff01cf125&oe=55DC8090"> 
+                        <h4 class="name">Chanchal Santra</h4>
+                        <p>@Chanchal_UI</p> 
+                        <span class="date">15 Feb</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script type="text/javascript" src="Contents/plugins/metronic.js"></script>
+<script src="Contents/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+<script>
+jQuery(document).ready(function() {       
+   Metronic.init(); // init metronic core components
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chanchal Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>SocioBoard | Home</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Contents/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="Contents/css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="Contents/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="Contents/css/plugins/social-buttons.css" rel="stylesheet">
+
+        <!-- DataTables CSS -->
+    <link href="Contents/css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+           <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+           
+            <div class="navbar-header">
+             <a class="navbar-brand" href="home.html"><img class="img-responsive" src="Contents/img/logo.png" alt="Socio Board" style="margin-top: -14px;"/></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="active">
+                        <a href="home.html"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#SearchModal" style="margin-top: 10px;"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#myModal" style="margin-top: 10px;"><i class="fa fa-send-o fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="margin-top: 10px;"><i class="fa fa-users fa-2x fa-fw"></i><i class="fa fa-caret-down fa-2x"></i></a>
+                         <ul class="dropdown-menu dropdown-user">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="https://cdn3.iconfinder.com/data/icons/impressionist-icons/64/group-icon.png" style="width: 35px;"> Users &amp; Groups</i></a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="https://cdn3.iconfinder.com/data/icons/impressionist-icons/64/group-icon.png" style="width: 35px;"> Users &amp; Groups</i></a>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="https://cdn3.iconfinder.com/data/icons/impressionist-icons/64/group-icon.png" style="width: 35px;"> Users &amp; Groups</i></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <!-- <i class="fa fa-user fa-2x fa-fw"></i> -->
+                        <img src="https://pbs.twimg.com/profile_images/507048905217802240/MjAkkHK_.jpeg" class=" headerProfilePic"><strong> Chanchal Santra </strong><i class="fa fa-caret-down fa-2x"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="https://cdn3.iconfinder.com/data/icons/impressionist-icons/64/group-icon.png" style="width: 35px;"> Users &amp; Groups</i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-suitcase fa-2x fa-fw"></i> Business Settings</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-2x fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-2x fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+            </nav>
+
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New Message</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-3">
+                            <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/s960x960/1523017_786750101350785_664146563_o.jpg" alt="" class="img-circle" style="height: 80px; width: 80px;">
+                            <hr class="small">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning">Action</button>
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">fb</a></li>
+                                <li><a href="#">tweeter</a></li>
+                                <li><a href="#">gplus</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="input-group col-md-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Interval Time:</p>
+                                <select class="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+            <!-- Modal SearchModal-->
+        <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                        </div>  
+                          <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-search fa-fw"></i>
+                            Search Result
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-wifi fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-close fa-fw"></i></small>
+                                    </div>
+                                </li>
+                            </ul>
+                            <pre><i class="fa fa-twitter"></i>twitter</pre>
+                             <ul class="chat">
+                                <li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-wifi fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-remove fa-fw"></i></small>
+                                    </div>
+                                </li><li class="left clearfix">
+                                    <div class="chat-body clearfix">
+                                            <strong>Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-close fa-fw"></i></small>
+                                    </div>
+                                </li>
+                            </ul>
+                            <pre><i class="fa fa-facebook"></i>facebook</pre>
+                            <a class="btn btn-block btn-social btn-twitter">
+                                <i class="fa fa-twitter"></i> Sign in with Twitter
+                            </a>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <p class="text-muted"><span>Chanchal Santra</span><span class="pull-right"><i class="fa fa-close fa-fw"></i></span></p>
+                            <button type="button" class="btn btn-primary btn-md btn-block"><i class="fa fa-facebook-square fa-fw"></i>Chanchal Santra<i class="fa fa-clock-o fa-fw pull-right"></i></button>
+                            <button type="button" class="btn btn-primary btn-md btn-block"><i class="fa fa-linkedin-square fa-fw"></i>Chanchal Santra<i class="fa fa-clock-o fa-fw pull-right"></i></button>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+
+
+        <!-- Page Content -->
+                <div class="container-fluid" style="margin-top: 25px;">
+                    <h1 class="page-header">SEO Signals Dashboard</h1>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            DataTables Advanced Tables
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>URL</th>
+                                            <th><i class="fa fa-thumbs-o-up fa-2x"></i></th>
+                                            <th><i class="fa fa-comments-o fa-2x"></i></th>
+                                            <th><i class="fa fa-share-alt fa-2x"></i></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td><a href="https://www.facebook.com/ChanchalGlobussoft" target="_blank">https://www.facebook.com/ChanchalGlobussoft</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td><a href="https://www.facebook.com/dellindia" target="_blank">https://www.facebook.com/dellindia</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td><a href="https://www.facebook.com/pages/GlobusApps/477686708933006" target="_blank">https://www.facebook.com/pages/GlobusApps/477686708933006</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td><a href="https://www.facebook.com/pages/What-Interests-You/361029767266821" target="_blank">https://www.facebook.com/pages/What-Interests-You/361029767266821</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td><a href="https://www.facebook.com/FFollowerz" target="_blank">https://www.facebook.com/FFollowerz</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td><a href="https://www.facebook.com/startupplays" target="_blank">https://www.facebook.com/startupplays</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td><a href="https://www.facebook.com/Abhimanyu.k.Santra" target="_blank">https://www.facebook.com/Abhimanyu.k.Santra</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                          <tr class="odd gradeX">
+                                            <td><a href="https://www.facebook.com/smexaminer" target="_blank">https://www.facebook.com/smexaminer</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td><a href="https://www.facebook.com/GlobusGames" target="_blank">https://www.facebook.com/GlobusGames</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td><a href="https://www.facebook.com/SocioBoard" target="_blank">https://www.facebook.com/SocioBoard</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td><a href="https://www.facebook.com/Globussoft" target="_blank">https://www.facebook.com/Globussoft</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td><a href="https://www.facebook.com/globusgym" target="_blank">https://www.facebook.com/globusgym</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td><a href="https://www.facebook.com/zuckup" target="_blank">https://www.facebook.com/zuckup</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td><a href="https://www.facebook.com/MashupDeals.in" target="_blank">https://www.facebook.com/MashupDeals.in</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                          <tr class="odd gradeX">
+                                            <td><a href="https://www.facebook.com/EmpMonitor" target="_blank">https://www.facebook.com/EmpMonitor</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeC">
+                                            <td><a href="https://www.facebook.com/ChanchalGlobussoft" target="_blank">https://www.facebook.com/ChanchalGlobussoft</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                            <td><a href="https://www.facebook.com/ChanchalGlobussoft" target="_blank">https://www.facebook.com/ChanchalGlobussoft</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td><a href="https://www.facebook.com/ChanchalGlobussoft" target="_blank">https://www.facebook.com/ChanchalGlobussoft</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="odd gradeA">
+                                https://lnkd.in/e5QE5Pg            <td><a href="https://www.facebook.com/ChanchalGlobussoft" target="_blank">https://www.facebook.com/ChanchalGlobussoft</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                            <td><a href="https://www.facebook.com/ChanchalGlobussoft" target="_blank">https://www.facebook.com/ChanchalGlobussoft</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td><a href="https://www.facebook.com/Abhimanyu.k.Santra" target="_blank">https://www.facebook.com/Abhimanyu.k.Santra</a></td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                            <td>100</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+
+        
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+
+
+    <!-- Google Analytics Socioboard -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58515856-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- End -->
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Contents/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="Contents/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="Contents/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="Contents/js/plugins/morris/raphael.min.js"></script>
+    <script src="Contents/js/plugins/morris/morris.min.js"></script>
+
+
+<!-- Sparkline JS -->
+<script src="Contents/js/jquery.sparkline.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="Contents/js/sb-admin-2.js"></script>
+<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+
+    </script>
+
+</body>
+
+</html>

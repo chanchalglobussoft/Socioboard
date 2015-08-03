@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Chanchal Santra">
+    <link rel="shortcut icon" href="Contents/img/ivon.ico" type="image/x-icon">
+
+    <title>SocioBoard | Groups</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="Contents/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="Contents/css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="Contents/css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="Contents/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="Contents/css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="Contents/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--datepicker css-->
+    <link rel="stylesheet" href="Contents/css/datepicker.css">
+    <link rel="stylesheet" href="Contents/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="Contents/css/bootstrap-datetimepicker.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+         <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="pull-right"><a href="">Get free Premium Account</a>
+                <select class="form-control input-sm">
+                    <option>socioboard</option>
+                    <option>DotNet</option>
+                    <option>team1</option>
+                </select>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html"><img class="img-responsive" src="Contents/img/logo.png" alt="Socio Board" style="
+    margin-top: -14px;" /></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                        <a class="active" href="home.html"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#SearchModal" style="margin-top: 10px;"><i class="fa fa-search fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                        <a data-toggle="modal" data-target="#myModal" style="margin-top: 10px;"><i class="fa fa-send-o fa-2x"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-2x"></i><i class="fa fa-caret-down fa-2x"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user fa-fw"></i> Social Media</i></a>
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook fa-fw"></i> facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin fa-fw"></i> Linkedin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube fa-fw"></i> youtube
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter fa-fw"></i> Twitter
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><i class="fa fa-bookmark fa-fw"></i> Other Account</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a class="active" href="home.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Message<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="message.html"> Smart Inbox</a>
+                                </li>
+                                <li>
+                                    <a href="task.html"> My Task</a>
+                                </li>
+                                <li>
+                                    <a href="sent.html"> Sent Message</a>
+                                </li>
+                                <li>
+                                    <a href="archive_message.html"> Archive Message</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                       <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Feeds<i class="fa arrow"></i></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Facebook <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="feeds.html">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="feeds.html">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Twitter <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Linkedin <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+
+                                <li>
+                                    <a href="#">Instagram <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Tumblr <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Youtube <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Chanchal</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhimanyu</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Abhi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pinku</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Publishing<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="publishing.html"> Schedule Message</a>
+                                </li>
+                                <li>
+                                    <a href="Socio Queue.html"> Socio Queue</a>
+                                </li>
+                                <li>
+                                    <a href="draft.html"> Drafts</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="Discovery.html"><i class="fa fa-edit fa-fw"></i> Discovery</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="GroupStats.html">Group Report</a>
+                                </li>
+                                <li>
+                                    <a href="TwitterReport.html">Tweeter</a>
+                                </li>
+                                <li>
+                                    <a href="TeamReport.html">Team Report</a>
+                                </li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="group.html"><i class="fa fa-users fa-fw"></i> Group<span class="fa arrow"></span></a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+                  </nav>
+
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New Message</h4>
+                    </div>
+                    <div class="modal-body col-md-12">
+                        <div class="col-md-3">
+                            <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xap1/t31.0-8/s960x960/1523017_786750101350785_664146563_o.jpg" alt="" class="img-circle" style="height: 80px; width: 80px;">
+                            <hr class="small">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-warning">Action</button>
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">fb</a></li>
+                                <li><a href="#">tweeter</a></li>
+                                <li><a href="#">gplus</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="input-group col-md-12">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Interval Time:</p>
+                                <select class="form-control">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+            <!-- Modal SearchModal-->
+        <div class="modal fade" id="SearchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of model-->
+  
+
+        <div id="page-wrapper">
+            
+            <div class="container-fluid">
+                <h1 class="page-header">Settings</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Chanchal Santra
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-pills">
+                                <li class="active"><a href="#Personal" data-toggle="tab">Personal Settings</a>
+                                </li>
+                                <li class=""><a href="#Business" data-toggle="tab">Business Settings</a>
+                                </li>
+                                <li class=""><a href="#Users" data-toggle="tab">Users &amp; Groups</a>
+                                </li>
+                                <li class=""><a href="#pricing" data-toggle="tab">Billing</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in" id="Personal">
+                                    <h4>Personal Settings</h4>
+                                    <div class="col-md-6">
+                                        <form role="form">
+                                            <div class="form-group input-group">
+                                                <span class="input-group-addon">Enter Your Name</span>
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                            </div>
+                                            <div class="form-group input-group">
+                                                <span class="input-group-addon">Enter Your Last Name</span>
+                                                <input type="text" class="form-control" placeholder="Last Name">
+                                            </div>
+                                            <div class="form-group input-group">
+                                                <span class="input-group-addon">E</span>
+                                                <input type="text" class="form-control" placeholder="Email id">
+                                            </div>
+                                             <button type="reset" class="btn btn-default">Reset Password</button>
+                                            <div class="form-group">
+                                                <img src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg" class="img-circle profilePic" alt="User Avatar" class="img-circle">
+                                                <label>Team members will see the avatar you have set.</label>
+                                                <input type="file">
+                                            </div>
+                                            <div class="form-group">
+                                              
+                                            <div class="time_zone">
+                                                Time Zone
+                                            </div>
+                                            <div class="ps_select">
+                                                <select id="ContentPlaceHolder1_ddlTimeZone" class="select">
+                                                    <option value="Dateline Standard Time">(UTC-12:00) International Date Line West</option>
+                                                    <option value="UTC-11">(UTC-11:00) Coordinated Universal Time-11</option>
+                                                    <option value="Hawaiian Standard Time">(UTC-10:00) Hawaii</option>
+                                                    <option value="Alaskan Standard Time">(UTC-09:00) Alaska</option>
+                                                    <option value="Pacific Standard Time (Mexico)">(UTC-08:00) Baja California</option>
+                                                    <option value="Pacific Standard Time">(UTC-08:00) Pacific Time (US &amp; Canada)</option>
+                                                    <option value="US Mountain Standard Time">(UTC-07:00) Arizona</option>
+                                                    <option value="Mountain Standard Time (Mexico)">(UTC-07:00) Chihuahua, La Paz, Mazatlan</option>
+                                                    <option value="Mountain Standard Time">(UTC-07:00) Mountain Time (US &amp; Canada)</option>
+                                                    <option value="Central America Standard Time">(UTC-06:00) Central America</option>
+                                                    <option value="Central Standard Time">(UTC-06:00) Central Time (US &amp; Canada)</option>
+                                                    <option value="Central Standard Time (Mexico)">(UTC-06:00) Guadalajara, Mexico City, Monterrey</option>
+                                                    <option value="Canada Central Standard Time">(UTC-06:00) Saskatchewan</option>
+                                                    <option value="SA Pacific Standard Time">(UTC-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                                                    <option value="Eastern Standard Time">(UTC-05:00) Eastern Time (US &amp; Canada)</option>
+                                                    <option value="US Eastern Standard Time">(UTC-05:00) Indiana (East)</option>
+                                                    <option value="Venezuela Standard Time">(UTC-04:30) Caracas</option>
+                                                    <option value="Paraguay Standard Time">(UTC-04:00) Asuncion</option>
+                                                    <option value="Atlantic Standard Time">(UTC-04:00) Atlantic Time (Canada)</option>
+                                                    <option value="Central Brazilian Standard Time">(UTC-04:00) Cuiaba</option>
+                                                    <option value="SA Western Standard Time">(UTC-04:00) Georgetown, La Paz, Manaus, San Juan</option>
+                                                    <option value="Pacific SA Standard Time">(UTC-04:00) Santiago</option>
+                                                    <option value="Newfoundland Standard Time">(UTC-03:30) Newfoundland</option>
+                                                    <option value="E. South America Standard Time">(UTC-03:00) Brasilia</option>
+                                                    <option value="Argentina Standard Time">(UTC-03:00) Buenos Aires</option>
+                                                    <option value="SA Eastern Standard Time">(UTC-03:00) Cayenne, Fortaleza</option>
+                                                    <option value="Greenland Standard Time">(UTC-03:00) Greenland</option>
+                                                    <option value="Montevideo Standard Time">(UTC-03:00) Montevideo</option>
+                                                    <option value="Bahia Standard Time">(UTC-03:00) Salvador</option>
+                                                    <option value="UTC-02">(UTC-02:00) Coordinated Universal Time-02</option>
+                                                    <option value="Mid-Atlantic Standard Time">(UTC-02:00) Mid-Atlantic - Old</option>
+                                                    <option value="Azores Standard Time">(UTC-01:00) Azores</option>
+                                                    <option value="Cape Verde Standard Time">(UTC-01:00) Cape Verde Is.</option>
+                                                    <option value="Morocco Standard Time">(UTC) Casablanca</option>
+                                                    <option value="UTC">(UTC) Coordinated Universal Time</option>
+                                                    <option value="GMT Standard Time">(UTC) Dublin, Edinburgh, Lisbon, London</option>
+                                                    <option value="Greenwich Standard Time">(UTC) Monrovia, Reykjavik</option>
+                                                    <option value="W. Europe Standard Time">(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                                                    <option value="Central Europe Standard Time">(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                                                    <option value="Romance Standard Time">(UTC+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                                                    <option value="Central European Standard Time">(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+                                                    <option value="W. Central Africa Standard Time">(UTC+01:00) West Central Africa</option>
+                                                    <option value="Namibia Standard Time">(UTC+01:00) Windhoek</option>
+                                                    <option value="Jordan Standard Time">(UTC+02:00) Amman</option>
+                                                    <option value="GTB Standard Time">(UTC+02:00) Athens, Bucharest</option>
+                                                    <option value="Middle East Standard Time">(UTC+02:00) Beirut</option>
+                                                    <option value="Egypt Standard Time">(UTC+02:00) Cairo</option>
+                                                    <option value="Syria Standard Time">(UTC+02:00) Damascus</option>
+                                                    <option value="E. Europe Standard Time">(UTC+02:00) E. Europe</option>
+                                                    <option value="South Africa Standard Time">(UTC+02:00) Harare, Pretoria</option>
+                                                    <option value="FLE Standard Time">(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+                                                    <option value="Turkey Standard Time">(UTC+02:00) Istanbul</option>
+                                                    <option value="Israel Standard Time">(UTC+02:00) Jerusalem</option>
+                                                    <option value="Libya Standard Time">(UTC+02:00) Tripoli</option>
+                                                    <option value="Arabic Standard Time">(UTC+03:00) Baghdad</option>
+                                                    <option value="Kaliningrad Standard Time">(UTC+03:00) Kaliningrad, Minsk</option>
+                                                    <option value="Arab Standard Time">(UTC+03:00) Kuwait, Riyadh</option>
+                                                    <option value="E. Africa Standard Time">(UTC+03:00) Nairobi</option>
+                                                    <option value="Iran Standard Time">(UTC+03:30) Tehran</option>
+                                                    <option value="Arabian Standard Time">(UTC+04:00) Abu Dhabi, Muscat</option>
+                                                    <option value="Azerbaijan Standard Time">(UTC+04:00) Baku</option>
+                                                    <option value="Russian Standard Time">(UTC+04:00) Moscow, St. Petersburg, Volgograd</option>
+                                                    <option value="Mauritius Standard Time">(UTC+04:00) Port Louis</option>
+                                                    <option value="Georgian Standard Time">(UTC+04:00) Tbilisi</option>
+                                                    <option value="Caucasus Standard Time">(UTC+04:00) Yerevan</option>
+                                                    <option value="Afghanistan Standard Time">(UTC+04:30) Kabul</option>
+                                                    <option value="West Asia Standard Time">(UTC+05:00) Ashgabat, Tashkent</option>
+                                                    <option value="Pakistan Standard Time">(UTC+05:00) Islamabad, Karachi</option>
+                                                    <option value="India Standard Time">(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                                                    <option value="Sri Lanka Standard Time">(UTC+05:30) Sri Jayawardenepura</option>
+                                                    <option value="Nepal Standard Time">(UTC+05:45) Kathmandu</option>
+                                                    <option value="Central Asia Standard Time">(UTC+06:00) Astana</option>
+                                                    <option value="Bangladesh Standard Time">(UTC+06:00) Dhaka</option>
+                                                    <option value="Ekaterinburg Standard Time">(UTC+06:00) Ekaterinburg</option>
+                                                    <option value="Myanmar Standard Time">(UTC+06:30) Yangon (Rangoon)</option>
+                                                    <option value="SE Asia Standard Time">(UTC+07:00) Bangkok, Hanoi, Jakarta</option>
+                                                    <option value="N. Central Asia Standard Time">(UTC+07:00) Novosibirsk</option>
+                                                    <option value="China Standard Time">(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                                                    <option value="North Asia Standard Time">(UTC+08:00) Krasnoyarsk</option>
+                                                    <option value="Singapore Standard Time">(UTC+08:00) Kuala Lumpur, Singapore</option>
+                                                    <option value="W. Australia Standard Time">(UTC+08:00) Perth</option>
+                                                    <option value="Taipei Standard Time">(UTC+08:00) Taipei</option>
+                                                    <option value="Ulaanbaatar Standard Time">(UTC+08:00) Ulaanbaatar</option>
+                                                    <option value="North Asia East Standard Time">(UTC+09:00) Irkutsk</option>
+                                                    <option value="Tokyo Standard Time">(UTC+09:00) Osaka, Sapporo, Tokyo</option>
+                                                    <option value="Korea Standard Time">(UTC+09:00) Seoul</option>
+                                                    <option value="Cen. Australia Standard Time">(UTC+09:30) Adelaide</option>
+                                                    <option value="AUS Central Standard Time">(UTC+09:30) Darwin</option>
+                                                    <option value="E. Australia Standard Time">(UTC+10:00) Brisbane</option>
+                                                    <option value="AUS Eastern Standard Time">(UTC+10:00) Canberra, Melbourne, Sydney</option>
+                                                    <option value="West Pacific Standard Time">(UTC+10:00) Guam, Port Moresby</option>
+                                                    <option value="Tasmania Standard Time">(UTC+10:00) Hobart</option>
+                                                    <option value="Yakutsk Standard Time">(UTC+10:00) Yakutsk</option>
+                                                    <option value="Central Pacific Standard Time">(UTC+11:00) Solomon Is., New Caledonia</option>
+                                                    <option value="Vladivostok Standard Time">(UTC+11:00) Vladivostok</option>
+                                                    <option value="New Zealand Standard Time">(UTC+12:00) Auckland, Wellington</option>
+                                                    <option value="UTC+12">(UTC+12:00) Coordinated Universal Time+12</option>
+                                                    <option value="Fiji Standard Time">(UTC+12:00) Fiji</option>
+                                                    <option value="Magadan Standard Time">(UTC+12:00) Magadan</option>
+                                                    <option value="Kamchatka Standard Time">(UTC+12:00) Petropavlovsk-Kamchatsky - Old</option>
+                                                    <option value="Tonga Standard Time">(UTC+13:00) Nuku'alofa</option>
+                                                    <option value="Samoa Standard Time">(UTC+13:00) Samoa</option>
+                                                </select>
+                                            </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-warning">Save</button>
+                                        </form>   
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="tab-pane fade" id="Business">
+                                    <h4>Business Name</h4>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon">*</span>
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <h4>Assigning Tasks</h4>
+                                        <p>This setting will enable your users to assign tasks across groups and will make other group members visible. If you do not want users to assign tasks across groups, leave this setting "disabled".</p>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>Disabled
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Enable cross-group assignments
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <h4>Task Notification Emails</h4>
+                                        <p>Socioboard alerts you &amp; your team members via email on various activities.</p>
+                                        <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Disabled
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Enable Task Notifications
+                                                </label>
+                                            </div>
+                                    </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </div>
+
+
+
+                                <div class="tab-pane fade" id="Users">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    Groups
+                                                    <div class="btn-group pull-right">
+                                                        <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#addGroup">
+                                                            <i class="fa fa-plus fa-2x"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p>Groups are used to categorize social profiles together to help manage and report on your social media efforts efficiently. Learn more about Groups</p>
+                                                    <!-- <div class="col-sm-2 deletegroup">
+                                                        <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                                        <img src="Contents/img/group-folder-sprite.png" class="img-responsive">
+                                                    </div>
+                                                    <div class="col-sm-2 deletegroup">
+                                                        <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                                        <img src="Contents/img/group-folder-sprite.png" class="img-responsive">
+                                                    </div> -->
+                                                    <!--  <div class="panel panel-default"> -->
+                      
+                        <!-- /.panel-heading -->
+                        <!-- <div class="panel-body"> -->
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab"><div class="deletegroup">
+                                                        <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                                        <img src="Contents/img/group-folder-sprite.png" class="img-responsive">
+                                                    </div>Dotnet</a>
+                                </li>
+                                <li><a href="#profile" data-toggle="tab"><div class="deletegroup">
+                                                        <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                                        <img src="Contents/img/group-folder-sprite.png" class="img-responsive">
+                                                    </div>team1</a>
+                                </li>
+                                <li><a href="#messages" data-toggle="tab"><div class="deletegroup">
+                                                        <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                                        <img src="Contents/img/group-folder-sprite.png" class="img-responsive">
+                                                    </div>team2</a>
+                                </li>
+                                <li><a href="#settings" data-toggle="tab"><div class="deletegroup">
+                                                        <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                                        <img src="Contents/img/group-folder-sprite.png" class="img-responsive">
+                                                    </div>team3</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="home">
+                                    <div class="panel-body">
+                                    <h4>Profile Linked To DotNet</h4>
+                                    <span class="pull-right btn btn-warning btn-sm" role="button" data-toggle="modal" data-target="#connectProfile">
+                                    Connect a profile</span>
+                                    <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/fb_icon.png">
+                            </div>
+                        <!-- </div>  -->
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg">
+                                <img src="Contents/img/twticon.png" class="img-responsive img-circle groupsocialIconPoss">
+                            </div>
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/link_icon.png">
+                            </div>
+                        </div>
+
+                            <div class="panel-body">
+                             <h4>Profiles available for connection</h4>
+                                    <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/fb_icon.png">
+                            </div>
+                        
+                           
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg">
+                                <img src="Contents/img/twticon.png" class="img-responsive img-circle groupsocialIconPoss">
+                            </div>
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/link_icon.png">
+                            </div>
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/fb_icon.png">
+                            </div>
+                       
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg">
+                                <img src="Contents/img/twticon.png" class="img-responsive img-circle groupsocialIconPoss">
+                            </div>
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/link_icon.png">
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <h4>Invite Team Members</h4>
+                            <span class="pull-right"><a class="btn btn-primary btn-sm" role="button">Invite a New Team Member</a></span>
+                                    <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/fb_icon.png">
+                            </div>
+                        <!-- </div>  -->
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg">
+                                <img src="Contents/img/twticon.png" class="img-responsive img-circle groupsocialIconPoss">
+                            </div>
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/link_icon.png">
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <h4>Invite Team Members</h4>
+                                    <div class="col-sm-1 groupuserpictiny">
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="Contents/img/add_user.png"></a>
+                            </div>
+                        <!-- </div>  -->
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg">
+                                <img src="Contents/img/twticon.png" class="img-responsive img-circle groupsocialIconPoss">
+                            </div>
+                            <div class="col-sm-1 groupuserpictiny">
+                                <div class="delet_icon" onclick="confirmDel('415298848564891','page','fb');" data-toggle="modal" data-target="#closeModal"></div>
+                                <a href="https://twitter.com/saiiifuuu" target="_blank"><img class="img-responsive img-rounded" src="https://pbs.twimg.com/profile_images/486529246769082370/Fx5BMxZD.jpeg"></a>
+                                <img class="img-responsive img-circle groupsocialIconPoss" src="Contents/img/link_icon.png">
+                            </div>
+                        </div>
+
+                                </div>
+
+                    <!-- Modal connectProfile Modal-->
+                <div class="modal fade" id="connectProfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+                                <span class="pull-right">
+                                    <select class="form-control">
+                                      <option>Select</option>
+                                      <option>DotNet</option>
+                                      <option>Team1</option>
+                                    </select>                           
+                                </span>
+                                <h4 class="modal-title" id="myModalLabel">CONNECT A PROFILE</h4>
+                                
+                            </div>
+                            <div class="modal-body">
+                                <a href="" target="_blank"><i class="fa fa-twitter-square fa-5x fa-fw"></i></a>
+                                <a href="" target="_blank"><i class="fa fa-facebook-square fa-5x fa-fw"></i></a>
+                                <a href="" target="_blank"><i class="fa fa-linkedin-square fa-5x fa-fw"></i></a> 
+                                <a href="" target="_blank"><i class="fa fa-instagram fa-5x fa-fw"></i></a> 
+                                <a href="" target="_blank"><i class="fa fa-tumblr-square fa-5x fa-fw"></i></a>             
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--end of connectProfile model-->
+
+
+
+                                <div class="tab-pane fade" id="profile">
+                                    <h4>Profile Linked To team1</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="tab-pane fade" id="messages">
+                                    <h4>Profile Linked To team2</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="tab-pane fade" id="settings">
+                                    <h4>Profile Linked To team3</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                                                    
+                                                </div>
+                                            </div>
+
+                                                <!-- addgroup Modal -->
+                                                <div class="modal fade" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Create a Group</h4>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                       <p>Groups help you organize your social profiles and team members. Name your group and you can begin connecting social profiles and adding team members to it. Twitter or Facebook required to create a group.</p>
+                                                       <div class="form-group input-group">
+                                                            <span class="input-group-addon">Group Name</span>
+                                                            <input type="text" class="form-control" placeholder="Name">
+                                                        </div>
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Submit</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <!--end of addgroup modal-->
+
+                                        </div>
+                                    </div>
+
+
+
+                                <div class="tab-pane fade" id="pricing">
+                                    <!--pricing-->
+                                        <section class="pricing">
+                                           <!--  <div class="container"> -->
+                                               <!--  <header>
+                                                    <h1>All Plans Include a Free 30-Day Trial</h1>
+                                                    <p class="lead">Upgrade, Change or Cancel Anytime</p>
+                                                </header> -->
+
+                                                <div class="row"> 
+                                                    <!-- <h2>Basic Plans</h2> -->
+                                                    <div class="col-md-3">
+                                                        <div class="pricing-box ">
+                                                            <div class="pricing-heading">
+                                                                Basic 
+                                                            </div><!-- end pricing-heading -->
+                                                            <div class="pricing-price">
+                                                                FREE
+                                                            </div><!-- end pricing-price -->
+                                                            <div class="pricing-description">
+                                                                Every plan is a unique package. This one fits for individuals.
+                                                            </div><!-- end pricing-description -->
+                                                            <ul class="pricing-list">
+                                                                <li>Comprehensive Dashboard</li>
+                                                                <li>Multiple Social Profiles Inbox</li>
+                                                                <li>Social Media Updates</li>
+                                                                <li>Scheduling Features</li>
+                                                                <li>Social Media based CRM</li>
+                                                                <li>Social Platform Reporting Tools</li>
+                                                                <li>World Class 24*7 Training &amp; Support</li>
+                                                                <li>Manage up to 5 profiles</li>
+                                                            </ul><!-- end pricing-list -->
+                                                            <div class="pricing-cta">
+                                                                <a href="" target="_blank" class="btn btn-large btn-pricing">Try Now</a>
+                                                            </div><!-- end pricing-cta -->
+                                                        </div><!-- end pricing-box -->
+                                                    </div><!-- end col-md-3 -->
+                                                    <div class="col-md-3">
+                                                        <div class="pricing-box">
+                                                            <div class="pricing-heading">
+                                                                Standard
+                                                            </div><!-- end pricing-heading -->
+                                                            <div class="pricing-price">
+                                                                $4.99 Per User/Month
+                                                            </div><!-- end pricing-price -->
+                                                            <div class="pricing-description">
+                                                                Comprises of great tools suitable for small teams.
+                                                            </div><!-- end pricing-description -->
+                                                            <ul class="pricing-list">
+                                                                <li>Smart Inbox</li>
+                                                                <li>Real Time Feeds from Social Media Platforms</li>
+                                                                <li>Advanced Publishing Features</li>
+                                                                <li>Sophisticated Tools for Social Media based CRM</li>
+                                                                <li>In-Depth Reporting Tools</li>
+                                                                <li>World Class 24*7 Training &amp; Support</li>
+                                                                <li>Manage up to 10 profiles</li>
+                                                            </ul><!-- end pricing-list -->
+                                                            <div class="pricing-cta">
+                                                                <a href="" target="_blank" class="btn btn-large btn-pricing">Try Now</a>
+                                                            </div><!-- end pricing-cta -->
+                                                        </div><!-- end pricing-box -->
+                                                    </div><!-- end col-md-3 -->
+                                                    <div class="col-md-3">
+                                                        <div class="pricing-box">
+                                                            <div class="pricing-heading">
+                                                                Premium
+                                                            </div><!-- end pricing-heading -->
+                                                            <div class="pricing-price">
+                                                                $9.99 Per User/Month
+                                                            </div><!-- end pricing-price -->
+                                                            <div class="pricing-description">
+                                                                Package you need to efficiently manage an expanding social media network.
+                                                            </div><!-- end pricing-description -->
+                                                            <ul class="pricing-list">
+                                                                <li>All Standard Plan Features</li>
+                                                                <li>Social Discovery</li>
+                                                                <li>Helpdesk Integration</li>
+                                                                <li>Powerful Statistics Engine</li>
+                                                                <li>Custom Viewable Analytics</li>
+                                                                <li>World Class 24*7 Training &amp; Support</li>
+                                                                <li>RSS Feeds</li>
+                                                                <li>Manage up to 20 profiles</li>
+                                                            </ul><!-- end pricing-list -->
+                                                            <div class="pricing-cta">
+                                                                <a href="" target="_blank" class="btn btn-large btn-pricing">Try Now</a>
+                                                            </div><!-- end pricing-cta -->
+                                                        </div><!-- end pricing-box -->
+                                                    </div><!-- end col-md-3 -->
+                                                    <div class="col-md-3">
+                                                        <div class="pricing-box ">
+                                                            <div class="pricing-heading">
+                                                                Deluxe
+                                                            </div><!-- end pricing-heading -->
+                                                            <div class="pricing-price">
+                                                                $19.99 Per User/Month
+                                                            </div><!-- end pricing-price -->
+                                                            <div class="pricing-description">
+                                                                Includes sophisticated tools for complex objectives
+                                                            </div><!-- end pricing-description -->
+                                                            <ul class="pricing-list">
+                                                                <li>All Basic, Standard &amp; Deluxe Features</li>
+                                                                <li>Prompt Feeds</li>
+                                                                <li>Constant Real-time Monitoring</li>
+                                                                <li>Team Collaboration Tools</li>
+                                                                <li>Social CRM</li>
+                                                                <li>World Class 24*7 Training &amp; Support</li>
+                                                                <li>Manage up to 50 profiles</li>
+                                                            </ul><!-- end pricing-list -->
+                                                            <div class="pricing-cta">
+                                                                <a href="" target="_blank" class="btn btn-large btn-pricing">Try Now</a>
+                                                            </div><!-- end pricing-cta -->
+                                                        </div><!-- end pricing-box -->
+                                                    </div><!-- end col-md-3 -->
+                                                </div><!-- end row -->
+
+
+
+                                                <div class="row"> 
+                                                    <!-- <h2>Expert Plans</h2> -->
+                                                    <div class="col-md-4">
+                                                        <div class="pricing-box ">
+                                                            <div class="pricing-heading">
+                                                                SocioBasic 
+                                                            </div><!-- end pricing-heading -->
+                                                            <div class="pricing-price">
+                                                                $29.99 Per User/Month
+                                                            </div><!-- end pricing-price -->
+                                                            <div class="pricing-description">
+                                                                Includes sophisticated tools for complex objectives
+                                                            </div><!-- end pricing-description -->
+                                                            <ul class="pricing-list">
+                                                                <li><strong>All Basic, Standard &amp; Deluxe Features</strong></li>
+                                                                <li>Prompt Feeds</li>
+                                                                <li>Constant Real-time Monitoring</li>
+                                                                <li>Team Collaboration Tools</li>
+                                                                <li>Social CRM</li>
+                                                                <li>World Class 24*7 Training &amp; Support</li>
+                                                                <li>Manage up to 100 profiles</li>
+                                                            </ul><!-- end pricing-list -->
+                                                            <div class="pricing-cta">
+                                                                <a href="" target="_blank" class="btn btn-large btn-pricing">Buy Now</a>
+                                                            </div><!-- end pricing-cta -->
+                                                        </div><!-- end pricing-box -->
+                                                    </div><!-- end col-md-4 -->
+                                                    <div class="col-md-4">
+                                                        <div class="pricing-box ">
+                                                            <div class="pricing-heading">
+                                                                SocioStandard
+                                                            </div><!-- end pricing-heading -->
+                                                            <div class="pricing-price">
+                                                                $49.99 Per User/Month
+                                                            </div><!-- end pricing-price -->
+                                                            <div class="pricing-description">
+                                                                Includes sophisticated tools for complex objectives
+                                                            </div><!-- end pricing-description -->
+                                                            <ul class="pricing-list">
+                                                                <li><strong>All Basic, Standard &amp; Deluxe Features</strong></li>
+                                                                <li>Prompt Feeds</li>
+                                                                <li>Constant Real-time Monitoring</li>
+                                                                <li>Team Collaboration Tools</li>
+                                                                <li>Social CRM</li>
+                                                                <li>World Class 24*7 Training &amp; Support</li>
+                                                                <li>Manage up to 200 profiles</li>
+                                                            </ul><!-- end pricing-list -->
+                                                            <div class="pricing-cta">
+                                                                <a href="" target="_blank" class="btn btn-large btn-pricing">Try Now</a>
+                                                            </div><!-- end pricing-cta -->
+                                                        </div><!-- end pricing-box -->
+                                                    </div><!-- end col-md-4 -->
+                                                    <div class="col-md-4">
+                                                        <div class="pricing-box">
+                                                            <div class="pricing-heading">
+                                                                SocioPremium
+                                                            </div><!-- end pricing-heading -->
+                                                            <div class="pricing-price">
+                                                                $79.99 Per User/Month
+                                                            </div><!-- end pricing-price -->
+                                                            <div class="pricing-description">
+                                                                Includes sophisticated tools for complex objectives
+                                                            </div><!-- end pricing-description -->
+                                                            <ul class="pricing-list">
+                                                                <li><strong>All Basic, Standard &amp; Deluxe Features</strong></li>
+                                                                <li>Prompt Feeds</li>
+                                                                <li>Constant Real-time Monitoring</li>
+                                                                <li>Team Collaboration Tools</li>
+                                                                <li>Social CRM</li>
+                                                                <li>World Class 24*7 Training &amp; Support</li>
+                                                                <li>Manage up to 500 profiles</li>
+                                                            </ul><!-- end pricing-list -->
+                                                            <div class="pricing-cta">
+                                                                <a href="" target="_blank" class="btn btn-large btn-pricing">Try Now</a>
+                                                            </div><!-- end pricing-cta -->
+                                                        </div><!-- end pricing-box -->
+                                                    </div><!-- end col-md-4 -->
+                                                </div><!-- end row -->
+                                            <!-- </div> --><!-- end container -->
+
+                                        </section>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="Contents/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Contents/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="Contents/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="Contents/js/plugins/morris/raphael.min.js"></script>
+    <script src="Contents/js/plugins/morris/morris.min.js"></script>
+   <!--datepicker js-->
+    <script src="Contents/js/bootstrap-datepicker.js"></script>
+    
+        <script type="text/javascript" src="Contents/js/moment.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="Contents/js/sb-admin-2.js"></script>
+    <script type="text/javascript">
+    $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+
+   
+    </script>
+
+</body>
+
+</html>
