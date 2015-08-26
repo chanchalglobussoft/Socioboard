@@ -1,0 +1,12 @@
+.header_li {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background: url(../../Contents/img/search_comp/Posting-Too-Much-on-Social-Media-Contractor.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-top: 50px;
+}
